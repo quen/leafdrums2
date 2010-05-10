@@ -1,0 +1,58 @@
+Temporary note: GRRR there are dependency projects I didn't notice. (../Library
+in the makefile etc.) Will try to get these files online soon. Pester me if
+required.
+
+
+This is the leafDrums 2 drum machine source code. I have no plans to do
+any further work on the project, and am now releasing leafDrums 2 under the
+GNU Public License in case others would like to make changes.
+
+If you just want to try out the current (and possibly final) version of the
+software, please see the project website:
+
+http://www.leafdigital.com/software/leafdrums/
+
+
+Status of this project
+----------------------
+
+I am not building a new version of the software. Consequently the existing
+shareware release remains under that license (and still has nag screens etc -
+although if you ignore the nags, you can keep using it indefinitely). 
+
+Rather than abandoning the project, I am making it open source.
+
+It is of course open to anyone to rebuild this code, remove the nag screens,
+and release it as completely free software. However, I'd politely ask that you
+retain my author credit and copyright notices (of course adding your own if you
+contribute to the code too) and, unless you make really major changes, that 
+you leave in a request for users to pay for the program at my website.
+Although leafDrums has probably been a lot more successful than most shareware
+over the years, I think it's unlikely that I ever made enough money to pay for
+the many hours spent (years back) developing it...
+
+The astute will notice that I didn't remove the key checker, so it would be
+easy to make a keygen for this code. However, the even more astute will realise
+that keygens for this software have been available for many years without my
+assistance... and perhaps will note that the software never expires even
+without a key.
+
+
+Want to be a new maintainer?
+----------------------------
+
+If anyone would like to take over development of this software, please be my
+guest. GitHub will allow you to fork this repository, so you should be able
+to easily start work on changing it - you don't even have to ask me! (In fact
+please don't! Just do it.) If you make a new releasable version with significant
+improvements, and intend to support it from now on, please let me know at the
+point where you have a new version ready - I will arrange to change the 
+relevant links and so on.
+
+The Windows source code here should probably compile in Microsoft Visual Studio 
+97, and hopefully in newer versions (may need tweaks). I don't have any
+documentation or assistance to offer - it's five years since I did anything
+to this code (that being only some minor change, I forget) and I don't really 
+use C++ or Windows any more.
+
+All code, graphics etc. are copyright Samuel Marshall.
