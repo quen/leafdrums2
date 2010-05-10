@@ -1,0 +1,584 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\LeafDrums.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\LeafDrums.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_REGISTER,            VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,3,0,1
+ PRODUCTVERSION 2,3,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "leafdigital\0"
+            VALUE "FileDescription", "leafDrums\0"
+            VALUE "FileVersion", "2.3 beta\0"
+            VALUE "InternalName", "leafDrums\0"
+            VALUE "LegalCopyright", "Copyright © Samuel Marshall 2001-2005. All rights reserved.\0"
+            VALUE "OriginalFilename", "leafDrums2.exe\0"
+            VALUE "ProductName", "leafDrums\0"
+            VALUE "ProductVersion", "2.3 beta\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_REGISTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 124
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 125
+    END
+
+    IDD_ONESHOTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+
+    IDD_NAGDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_LICENSE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU DISCARDABLE 
+BEGIN
+    MENUITEM "I don't want a menu. Go away.", 65535
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_REGISTER DIALOG DISCARDABLE  0, 0, 131, 132
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enter registration code"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,85,115,40,15
+    LTEXT           "Enter your name (exactly as I listed it)",IDC_STATIC,5,
+                    55,120,8
+    LTEXT           "Enter the code number you received",IDC_STATIC,5,85,125,
+                    10
+    PUSHBUTTON      "Cancel",IDCANCEL,50,115,30,14
+    LTEXT           "Before you can complete this dialog box, you'll need the information I send once I've received your payment. If you don't have this information yet, click Cancel now.",
+                    IDC_STATIC,5,5,120,40
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,5,50,119,1
+    EDITTEXT        IDC_NAMEEDIT,5,65,120,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NUMBEREDIT,5,95,120,14,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_ONESHOTDLG DIALOG DISCARDABLE  0, 0, 227, 121
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "For your information..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,172,101,50,14
+    CONTROL         "Don't show this again",IDC_DONTSHOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,106,83,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,5,101,160,1
+    LTEXT           "This is a placeholder for useful one-time advice to the user.",
+                    IDC_TEXT,5,5,215,90
+END
+
+IDD_NAGDIALOG DIALOG DISCARDABLE  0, 0, 219, 113
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Registration reminder"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Other methods...",IDC_OTHER,90,95,65,14
+    PUSHBUTTON      "OK",IDOK,165,95,50,14
+    LTEXT           "leafDrums isn't free. Please support shareware and pay for your copy; click the button below for information.",
+                    IDC_STATIC,35,5,175,20
+    LTEXT           "You may only use the program for an evaluation period of up to 30 days; at the end of that time, you must either pay for the program or remove it from your computer.",
+                    IDC_STATIC,35,29,175,25
+    ICON            IDR_MAINFRAME,IDC_STATIC,5,5,20,20
+    LTEXT           "If you're online at the moment, you can click the ""Order online"" button to open your Web browser at a page that lets you order leafDrums (by credit card) for only $25.",
+                    IDC_STATIC,35,62,175,25
+    PUSHBUTTON      "Order online",IDC_ORDERONLINE,35,95,50,14
+END
+
+IDD_LICENSE DIALOG DISCARDABLE  0, 0, 232, 170
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "License agreement"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "I accept the above terms",IDOK,5,150,105,14
+    PUSHBUTTON      "Do not accept",IDCANCEL,160,150,65,14
+    LTEXT           "Use of leafDrums is subject to the license agreement set forth below. You must read and agree to all terms before using this software. If you do not agree to all terms, click ""Do not accept"" and remove this software from your computer.",
+                    IDC_STATIC,5,5,220,35
+    EDITTEXT        IDC_EDITLICENSE,5,40,220,95,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+    LTEXT           "You must accept the license agreement in order to use the program.",
+                    IDC_STATIC,5,137,214,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_POINTERADD          CURSOR  DISCARDABLE     "res\\cur00001.cur"
+IDC_POINTERBASE         CURSOR  DISCARDABLE     "res\\pointera.cur"
+IDC_POINTERDEL          CURSOR  DISCARDABLE     "res\\cur00002.cur"
+IDC_POINTERNO           CURSOR  DISCARDABLE     "res\\pointerb.cur"
+IDC_POINTERGRID         CURSOR  DISCARDABLE     "res\\cur00003.cur"
+IDC_POINTERDOWN         CURSOR  DISCARDABLE     "res\\cur00004.cur"
+IDC_POINTERADDPOINT     CURSOR  DISCARDABLE     "res\\spare.cur"
+IDC_POINTERMOVE         CURSOR  DISCARDABLE     "res\\cur00006.cur"
+IDC_POINTERINSERT       CURSOR  DISCARDABLE     "res\\cur00005.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "leafDrums\n\nSong\nDrum rhythm files (*.leafDrums2)\n.leafDrums2\nleafDrums2.Document\nleafDrums rhythm"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "leafDrums2"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_LICENSE1            "Part I - License agreement\r\n1. The author (Samuel Marshall) will not be held responsible for any damages that occur as a result of using this program (leafDrums). The program is provided ""as is"", and you use it at your own risk.\r\n2. If you have not paid the author for (""registered"") this program, you may use it only for evaluation purposes. The evaluation period is limited to 30 days from the first use of the program; if after this time you have not paid for the program, you must stop using it.\r\n\r\n"
+    IDS_LICENSE2            "Part II - Distribution limitations\r\nYou may not redistribute any part or parts of this program by any means, except under the following conditions:\r\n1. The file being redistributed is the original installer .exe file, identical in every way to that distributed by the author\r\n2. No implication is made that the software is the work of any person or organisation other than the author, Samuel Marshall.\r\n"
+    IDS_LICENSE3            "3. EITHER no charge of any kind is made for the redistribution, OR one of the following applies:\r\ni. The file is included on a CD-ROM provided free with an issue  of a regular monthly or bi-monthly magazine, with a circulation of at least 1,000. Any text referring to the program must make clear that it is shareware, and there must be an explanation that shareware programs require payment to the authors if they are found useful.\r\nii. The file is included on a CD-ROM collection of software.Text on the packaging must make clear that shareware programs require additional payment to the authors if they are found useful. There must be at least 10 other programs on the CD-ROM.\r\n"
+    IDS_LICENSE4            "iii. Specific written or emailed permission has been obtained from the author for distribution in the particular manner required."
+    IDS_TIMEOUT             "You've now been using leafDrums for thirty days. Please pay for the program, or delete it from your computer; using the program further without paying for it is illegal as well as unethical.\n\nWhen you register you also encourage me to work on future versions.\n\nThanks for trying out leafDrums!"
+    IDS_WELCOME             "Welcome to leafDrums!\n\nWe strongly recommend that you begin by clicking the 'Help' button at the top right of the display. It will only take a few minutes to work through the tutorial included there, and that'll save you loads of time figuring out how to get started."
+    IDS_256COLOUR           "Your computer's display is set to 256 colours.\r\n\r\nThis is not generally a good idea. leafDrums works fine in 256-colour mode and I personally quite like the graphical effect, but even so we strongly recommend that you set your computer to high-colour or true-colour mode if at all possible.\r\n\r\nTo do this, click the Start button, choose Settings/Control Panel, then double-click the Display icon and choose Settings - that screen includes an option to change the number of colours."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_WRITE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 229
+    END
+
+    IDD_CUSTOMSAVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 269
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 24
+    END
+
+    IDD_FOLDEROPTIONSDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_CUSTOMPRESETOPEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 269
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 34
+    END
+
+    IDD_SETTEMPO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_WRITE DIALOG DISCARDABLE  0, 0, 255, 236
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Write"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Write...",IDOK,198,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,198,24,50,14
+    EDITTEXT        IDC_COUNT,41,60,22,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Write all sounds to a single file",IDC_OUTPUTSTYLE0,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,13,
+                    98,111,10
+    CONTROL         "Write each drum to a different file",IDC_OUTPUTSTYLE1,
+                    "Button",BS_AUTORADIOBUTTON,13,115,120,10
+    CONTROL         "Write each track to a different file",IDC_OUTPUTSTYLE2,
+                    "Button",BS_AUTORADIOBUTTON,14,154,121,10
+    LTEXT           "The selected portion of the song will be written to a .wav audio file. You can then import it into other music software.",
+                    IDC_STATIC,7,7,186,19
+    LTEXT           "If you would like more than one copy of the selected portion, specify that here.",
+                    IDC_STATIC,13,38,173,22
+    GROUPBOX        "Number of copies",IDC_STATIC,7,27,187,53
+    LTEXT           "Copies",IDC_STATIC,14,62,22,8
+    LTEXT           "(Total size of files nn MB)",IDC_FILESIZE,69,62,116,8
+    GROUPBOX        "Output",IDC_STATIC,7,85,187,110
+    LTEXT           "For use with multitrack recording software. The files will have the name you select, but with the appropriate drum name added to the end of each.",
+                    IDC_STATIC,25,126,165,25
+    LTEXT           "For use with multitrack recording software. The files will have the name you select, but with a number added to the end for each track.",
+                    IDC_STATIC,25,165,165,25
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,14,110,176,1
+    GROUPBOX        "File format and compression",IDC_STATIC,7,200,187,30
+    COMBOBOX        IDC_FORMAT,13,211,177,59,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_CUSTOMSAVE DIALOG DISCARDABLE  0, 0, 276, 31
+STYLE DS_3DLOOK | WS_CHILD | WS_CLIPSIBLINGS
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Embed all audio data",IDC_EMBEDSOUNDS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,0,82,10
+    LTEXT           "If you select this option, all audio data for the song will be saved with the file, rather than relying on the separate WAV files from your computer.",
+                    IDC_STATIC,17,11,258,18
+END
+
+IDD_FOLDEROPTIONSDIALOG DIALOG DISCARDABLE  0, 0, 310, 154
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Folder options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,255,137,50,14
+    GROUPBOX        "Root folders",IDC_STATIC,5,3,300,131
+    LTEXT           "leafDrums looks in these folders, and any subfolders they may have, for .wav files to use as drum sounds. You don't need to change this list unless you want to store your sounds in a different place.",
+                    IDC_STATIC,10,15,290,27
+    LISTBOX         IDC_FOLDERLIST,10,45,290,50,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add",IDC_ADD,195,98,50,14
+    PUSHBUTTON      "Delete",IDC_DEL,251,98,50,14
+    PUSHBUTTON      "Set default",IDC_SETDEFAULT,10,115,50,14
+    LTEXT           "(The default folder is the one that's opened when you click 'Open'.)",
+                    IDC_STATIC,64,118,235,8
+    EDITTEXT        IDC_FOLDEREDIT,10,98,185,14,ES_AUTOHSCROLL
+END
+
+IDD_CUSTOMPRESETOPEN DIALOG DISCARDABLE  0, 0, 276, 41
+STYLE DS_3DLOOK | WS_CHILD | WS_CLIPSIBLINGS
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Apply from preset",IDC_STATIC,5,0,265,37
+    CONTROL         "Sound file",IDC_SOUND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,11,47,10
+    CONTROL         "Envelope && trim",IDC_ENVELOPE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,22,23,73,10
+    CONTROL         "Tuning",IDC_TUNING,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,109,11,38,10
+    CONTROL         "Effects",IDC_EFFECTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,183,11,38,10
+    CONTROL         "Stretch to fit",IDC_STRETCH,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,108,23,54,10
+    CONTROL         "Accent and pan",IDC_ACCENTPAN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,183,23,67,10
+END
+
+IDD_SETTEMPO DIALOG DISCARDABLE  0, 0, 184, 156
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set tempo / time signature"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_TEMPO,10,52,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TIMESIGNATURE,10,88,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,130,5,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,23,50,14
+    PUSHBUTTON      "Apply",IDC_APPLY,130,41,50,14
+    GROUPBOX        "Tempo",IDC_STATIC,5,41,120,30
+    LTEXT           "beats per minute",IDC_STATIC,55,54,53,8
+    GROUPBOX        "Time signature",IDC_STATIC,5,76,120,75
+    LTEXT           "beats per bar",IDC_STATIC,55,90,42,8
+    LTEXT           "Make sure that patterns you place match the time signature of the bar they're in. You may need to use controls below the pattern to remove or add beats.",
+                    IDC_STATIC,10,106,110,40
+    LTEXT           "This change applies from the bar you selected onward. If you want the same tempo throughout, edit only the first bar's setting.",
+                    IDC_STATIC,5,5,120,35
+END
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\LeafDrums.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

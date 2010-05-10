@@ -1,0 +1,386 @@
+#include "stdafx.h"
+#include "leafDrums.h"
+
+#include "MainFrm.h"
+
+#include "PaletteDC.h"
+#include "GraphicOnscreen.h"
+
+#include "GraphicButton.h"
+
+#include "Security.h"
+#include "NagDialog.h"
+#include "RegisterDialog.h"
+#include "OneShotDialog.h"
+
+#include "LogoWnd.h"
+
+#ifdef _DEBUG
+#define new DEBUG_NEW
+#undef THIS_FILE
+static char THIS_FILE[] = __FILE__;
+#endif
+
+int CMainFrame::m_iCaptionSize;
+
+
+/////////////////////////////////////////////////////////////////////////////
+// CMainFrame
+
+IMPLEMENT_DYNCREATE(CMainFrame, CFrameWnd)
+
+BEGIN_MESSAGE_MAP(CMainFrame, CFrameWnd)
+	//{{AFX_MSG_MAP(CMainFrame)
+	ON_WM_SIZE()
+	ON_WM_CREATE()
+	ON_WM_LBUTTONDOWN()
+	ON_WM_PAINT()
+	ON_WM_ACTIVATE()
+	ON_WM_QUERYNEWPALETTE()
+	ON_COMMAND(ID_REGISTER, OnRegister)
+	ON_WM_TIMER()
+	//}}AFX_MSG_MAP
+	ON_WM_NCHITTEST()
+	ON_MESSAGE(WM_SETTEXT,OnSetText)
+	ON_COMMAND(IDC_MIN,OnMin)
+	ON_COMMAND(IDC_CLOSE,OnClose)
+END_MESSAGE_MAP()
+
+/////////////////////////////////////////////////////////////////////////////
+// CMainFrame construction/destruction
+
+CMainFrame::CMainFrame()
+{
+	// Obtain the user's settings for font & size
+	NONCLIENTMETRICS ncm;
+	FillMemory(&ncm,sizeof(ncm),0);
+	ncm.cbSize=sizeof(ncm);
+	VERIFY(SystemParametersInfo(SPI_GETNONCLIENTMETRICS,
+		0,&ncm,0));
+
+	// Get height of captions
+	m_iCaptionSize=ncm.iCaptionHeight;
+
+	// Create font to use for drawing caption
+	m_pgfCaption=new CGraphicFont(ncm.lfCaptionFont,FALSE);
+
+	m_pgMaxDis=NULL;
+}
+
+CMainFrame::~CMainFrame()
+{
+	delete m_pgfCaption;
+	if(m_pgMaxDis) delete m_pgMaxDis;
+}
+
+BOOL CMainFrame::PreCreateWindow(CREATESTRUCT& cs)
+{
+	BOOL fOK=CFrameWnd::PreCreateWindow(cs);
+	cs.style=FWS_ADDTOTITLE;
+
+	return fOK;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+// CMainFrame diagnostics
+
+#ifdef _DEBUG
+void CMainFrame::AssertValid() const
+{
+	CFrameWnd::AssertValid();
+}
+
+void CMainFrame::Dump(CDumpContext& dc) const
+{
+	CFrameWnd::Dump(dc);
+}
+
+#endif //_DEBUG
+
+/////////////////////////////////////////////////////////////////////////////
+// CMainFrame message handlers
+
+void CMainFrame::OnSize(UINT nType, int cx, int cy) 
+{
+	CFrameWnd::OnSize(nType, cx, cy);
+
+	// Obtain client and window rectangles 
+	CRect rectClient,rectWindow;
+	GetClientRect(&rectClient);
+	GetWindowRect(&rectWindow);
+
+	// Check the difference from the required client size
+	int iXGrow=CLIENTWIDTH-rectClient.Width();
+	int iYGrow=CLIENTHEIGHT+m_iCaptionSize-rectClient.Height();
+
+	// Enlarge the window by that amount
+	rectWindow.right+=iXGrow;
+	rectWindow.bottom+=iYGrow;
+
+	// Check we're onscreen, if not, centre
+	if( rectWindow.right>GetSystemMetrics(SM_CXSCREEN) ||
+		rectWindow.bottom>GetSystemMetrics(SM_CYSCREEN)-30)
+	{
+		int iXPos=(GetSystemMetrics(SM_CXSCREEN)-rectWindow.Width())/2;
+		int iYPos=(GetSystemMetrics(SM_CYSCREEN)-30-rectWindow.Height())/2;
+
+		rectWindow.OffsetRect(
+			iXPos-rectWindow.left,iYPos-rectWindow.top);
+	}
+
+	MoveWindow(&rectWindow);
+
+	// Move the window control buttons to the right place
+	GetDlgItem(IDC_CLOSE)->SetWindowPos(NULL,CLIENTWIDTH-m_pgMaxDis->Width()-2,1,
+		0,0,SWP_NOSIZE|SWP_NOZORDER);
+	GetDlgItem(IDC_MIN)->SetWindowPos(NULL,CLIENTWIDTH-m_pgMaxDis->Width()*3-4,1,
+		0,0,SWP_NOSIZE|SWP_NOZORDER);
+}
+
+int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct) 
+{
+	// Set icon
+	HICON hIcon=AfxGetApp()->LoadIcon(IDR_MAINFRAME);
+	SetIcon(hIcon,FALSE);
+
+	// Work out size of control buttons
+	int iHeight=m_iCaptionSize-3,
+		iWidth=(iHeight*46)/44;
+
+	// Load and resample the graphics
+	CGraphic gMinUp(46,44);
+	gMinUp.LoadResource("minbuttonu");
+	gMinUp.Resample(iWidth,iHeight);
+
+	CGraphic gMinOver(46,44);
+	gMinOver.LoadResource("minbuttono");
+	gMinOver.Resample(iWidth,iHeight);
+
+	CGraphic gMinDown(46,44);
+	gMinDown.LoadResource("minbuttond");
+	gMinDown.Resample(iWidth,iHeight);
+
+	CGraphic gCloseUp(46,44);
+	gCloseUp.LoadResource("Closebuttonu");
+	gCloseUp.Resample(iWidth,iHeight);
+
+	CGraphic gCloseOver(46,44);
+	gCloseOver.LoadResource("Closebuttono");
+	gCloseOver.Resample(iWidth,iHeight);
+
+	CGraphic gCloseDown(46,44);
+	gCloseDown.LoadResource("Closebuttond");
+	gCloseDown.Resample(iWidth,iHeight);
+
+	m_pgMaxDis=new CGraphic(46,44);
+	m_pgMaxDis->LoadResource("Maxbuttondis");
+	m_pgMaxDis->Resample(iWidth,iHeight);
+	
+	if (CFrameWnd::OnCreate(lpCreateStruct) == -1)
+		return -1;
+
+	// Create the buttons for min. and close (any old place, position
+	// on WM_SIZE)
+	CGraphicButton* pgb=new CGraphicButton(TRUE);
+	pgb->Create(this,IDC_MIN,
+		"",1000,1000,iWidth,iHeight,
+		"Arial",14,
+		&gMinUp,0,0,0,
+		&gMinOver,0,0,0,
+		&gMinDown,0,0,0);
+
+	pgb=new CGraphicButton(TRUE);
+	pgb->Create(this,IDC_CLOSE,
+		"",1000,1000,iWidth,iHeight,
+		"Arial",14,
+		&gCloseUp,0,0,0,
+		&gCloseOver,0,0,0,
+		&gCloseDown,0,0,0);
+
+	// Get rid of menu
+	CMenu* pmenu=GetMenu();
+	SetMenu(NULL);
+	pmenu->DestroyMenu();
+
+	DWORD dwStyle=GetStyle();
+	ModifyStyle(dwStyle,WS_BORDER|FWS_ADDTOTITLE|FWS_PREFIXTITLE|WS_SYSMENU);
+	// ModifyStyleEx causes WM_SIZE to be sent
+	ModifyStyleEx(GetExStyle(),WS_EX_WINDOWEDGE,SWP_FRAMECHANGED);
+	
+	// Get rid of the loading window
+	((CLeafDrumsApp*)AfxGetApp())->SetMainWnd(this);
+	CLogoWnd::sm_pCurrent->DestroyWindow();
+
+	// If it isn't registered...
+	if(!CRegistration::sm_pCurrent->Registered())
+	{
+		// Display nag dialog
+		CNagDialog dlgNag(this);
+		dlgNag.DoModal();
+
+		// Display another dialog after 30 days
+		if(CRegistration::sm_pCurrent->DaysUsed()>=30)
+		{
+			COneShotDialog dlg(IDS_TIMEOUT);
+			dlg.DoModal();
+		}
+	}		
+
+	// Display 256-colour warning
+	CClientDC dc(this);
+	if(dc.GetDeviceCaps(RASTERCAPS) & RC_PALETTE)
+	{
+		COneShotDialog dlg(IDS_256COLOUR);
+		dlg.DoModal();
+	}
+
+	// Display the welcome dialog a bit later
+	PostMessage(WM_TIMER,0,0);
+
+	return 0;
+}
+
+void CMainFrame::OnLButtonDown(UINT nFlags, CPoint point) 
+{
+	CFrameWnd::OnLButtonDown(nFlags, point);
+}
+
+void CMainFrame::OnPaint() 
+{
+	CPaletteDC dc(this); // device context for painting
+
+	CGraphicOnscreen go(CLIENTWIDTH,m_iCaptionSize);
+
+	// Draw background of bar
+	// Clear to our colour unless inactive (use user's deactive colour)
+	BYTE bRed,bGreen,bBlue;
+	if(m_fActive)
+	{
+		//bRed=0x80; bGreen=bBlue=0;
+//		bRed=83; bGreen=88; bBlue=6;
+//		bRed=235; bGreen=234; bBlue=223;
+//		bRed=221; bGreen=233; bBlue=238;
+		bRed=238; bGreen=231; bBlue=221;
+	}
+	else
+	{
+		DWORD dwColour=GetSysColor(COLOR_INACTIVECAPTION);
+		bRed=GetRValue(dwColour);
+		bGreen=GetGValue(dwColour);
+		bBlue=GetBValue(dwColour);
+	}
+	for(int y=0;y<go.Height();y++)
+		for(int x=0;x<go.Width();x++)
+	{
+		go.Data()[y*go.ByteWidth()+x*3]=bBlue;
+		go.Data()[y*go.ByteWidth()+x*3+1]=bGreen;
+		go.Data()[y*go.ByteWidth()+x*3+2]=bRed;
+	}
+
+	// Draw text of bar
+	CString strCaption;
+	GetWindowText(strCaption);
+
+	// Remove filename extension
+	if(strCaption.Find(".leafDrums2")!=-1)
+	{
+		int iPos=strCaption.Find(".leafDrums2");
+		strCaption=strCaption.Left(iPos)+strCaption.Mid(iPos+11);
+	}
+
+	// Switch order of caption because MFC won't
+/*	CString 
+		strFirst=strCaption.Left(strCaption.Find('-')-1),
+		strSecond=strCaption.Mid(strCaption.Find('-')+2);
+
+	strCaption.Format("%s - %s",strSecond,strFirst);
+*/
+	// Add version number
+	strCaption+=" 2.3 alpha 2";
+
+	// Alter title to add registration status
+	if(CRegistration::sm_pCurrent->Registered())
+		strCaption.Format("%s (registered to %s)",strCaption,
+			CRegistration::sm_pCurrent->RegisteredName());
+	else strCaption+=" (unregistered trial version)";
+
+	m_pgfCaption->Draw(&go,4,(m_iCaptionSize-m_pgfCaption->Height())/2,
+		strCaption,m_fActive ? /*RGB(0xff,0xff,0xff)*/ RGB(0,0,0)
+		: GetSysColor(COLOR_INACTIVECAPTIONTEXT));
+
+	// Draw disabled maximize button
+	if(m_pgMaxDis)
+		m_pgMaxDis->Copy(&go,CLIENTWIDTH-m_pgMaxDis->Width()*2-4,1);
+	go.Draw(&dc,0,0);
+}
+
+UINT CMainFrame::OnNcHitTest(CPoint point)
+{
+	// Obtain client co-ordinates
+	CPoint ptClient=point;
+	ScreenToClient(&ptClient);
+	CRect rectClient;
+	GetClientRect(&rectClient);
+
+	// See if they were in desired range
+	if(ptClient.x>=4 && ptClient.x<rectClient.Width()-4 &&
+		ptClient.y>=4 && ptClient.y<m_iCaptionSize)
+	{
+		return HTCAPTION;
+	}
+	else return CFrameWnd::OnNcHitTest(point);
+}
+
+LRESULT CMainFrame::OnSetText(WPARAM wp, LPARAM lp)
+{
+	LRESULT lr=DefWindowProc(WM_SETTEXT,wp,lp);
+
+	CRect rect(0,0,CLIENTWIDTH,m_iCaptionSize);
+	InvalidateRect(&rect,FALSE);
+
+	return lr;
+}
+ 
+
+void CMainFrame::OnActivate(UINT nState, CWnd* pWndOther, BOOL bMinimized) 
+{
+	CFrameWnd::OnActivate(nState, pWndOther, bMinimized);
+	
+	if(nState==WA_INACTIVE)
+		m_fActive=FALSE;
+	else
+		m_fActive=TRUE;
+
+	CRect rect(0,0,CLIENTWIDTH,m_iCaptionSize);
+	InvalidateRect(&rect,FALSE);
+}
+
+void CMainFrame::OnMin()
+{
+	ShowWindow(SW_MINIMIZE);
+}
+
+void CMainFrame::OnClose()
+{
+	PostMessage(WM_CLOSE,0,0);
+}
+
+BOOL CMainFrame::OnQueryNewPalette() 
+{
+	CDisplayDevice::sm_pDisplayDevice->Realize(this);
+	
+	return TRUE;
+}
+
+void CMainFrame::OnRegister() 
+{
+	CRegisterDialog dlg;
+	dlg.DoModal();
+}
+
+void CMainFrame::OnTimer(UINT nIDEvent) 
+{
+	// Display welcome dialog
+	COneShotDialog dlg(IDS_WELCOME);
+	dlg.DoModal();
+}

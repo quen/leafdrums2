@@ -1,0 +1,270 @@
+//
+// CUTEDRUMS.RC2 - resources Microsoft Visual C++ does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+	#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Add manually edited resources here...
+GlobalPalette CutePalette res\global.pal
+
+Logo BMP_C res\Logo.bmp_C
+Copyright BMP_C res\Copyright.bmp_C
+
+ControlBarBackground BMP_C res\ControlBar_Background.bmp_C
+ControlBarButtons RGB_BMP_C res/ControlBar_Buttons_rgb.bmp_C
+ControlBarButtons A_BMP_C res/ControlBar_Buttons_a.bmp_C
+ControlBarButtonsOver RGB_BMP_C res/ControlBar_ButtonsOver_rgb.bmp_C
+ControlBarButtonsOver A_BMP_C res/ControlBar_ButtonsOver_a.bmp_C
+ControlBarButtonsPressed RGB_BMP_C res/ControlBar_ButtonsPressed_rgb.bmp_C
+ControlBarButtonsPressed A_BMP_C res/ControlBar_ButtonsPressed_a.bmp_C
+
+SongScreenBackground BMP_C res/SongScreen_Background.bmp_C
+SongScreenButtons RGB_BMP_C res/SongScreen_Buttons_rgb.bmp_C
+SongScreenButtons A_BMP_C res/SongScreen_Buttons_a.bmp_C
+SongScreenButtonsAlt RGB_BMP_C res/SongScreen_ButtonsAlt_rgb.bmp_C
+SongScreenButtonsAlt A_BMP_C res/SongScreen_ButtonsAlt_a.bmp_C
+SongScreenButtonsOver RGB_BMP_C res/SongScreen_ButtonsOver_rgb.bmp_C
+SongScreenButtonsOver A_BMP_C res/SongScreen_ButtonsOver_a.bmp_C
+SongScreenButtonsPressed RGB_BMP_C res/SongScreen_ButtonsPressed_rgb.bmp_C
+SongScreenButtonsPressed A_BMP_C res/SongScreen_ButtonsPressed_a.bmp_C
+SongScreenButtonsPressedAlt RGB_BMP_C res/SongScreen_ButtonsPressedAlt_rgb.bmp_C
+SongScreenButtonsPressedAlt A_BMP_C res/SongScreen_ButtonsPressedAlt_a.bmp_C
+
+RepeatGrey RGB_BMP_C res/RepeatGrey_rgb.bmp_C
+RepeatGrey A_BMP_C res/RepeatGrey_a.bmp_C
+RepeatColour RGB_BMP_C res/RepeatColour_rgb.bmp_C
+RepeatColour A_BMP_C res/RepeatColour_a.bmp_C
+
+TempoSign RGB_BMP_C res/Tempo_Sign_rgb.bmp_C
+TempoSign A_BMP_C res/Tempo_Sign_a.bmp_C
+
+Control4 RGB_BMP_C res/Control4_rgb.bmp_C
+Control4 A_BMP_C res/Control4_a.bmp_C
+Control5 RGB_BMP_C res/Control5_rgb.bmp_C
+Control5 A_BMP_C res/Control5_a.bmp_C
+Control6 RGB_BMP_C res/Control6_rgb.bmp_C
+Control6 A_BMP_C res/Control6_a.bmp_C
+Control7 RGB_BMP_C res/Control7_rgb.bmp_C
+Control7 A_BMP_C res/Control7_a.bmp_C
+Control8 RGB_BMP_C res/Control8_rgb.bmp_C
+Control8 A_BMP_C res/Control8_a.bmp_C
+Control9 RGB_BMP_C res/Control9_rgb.bmp_C
+Control9 A_BMP_C res/Control9_a.bmp_C
+Control10 RGB_BMP_C res/Control10_rgb.bmp_C
+Control10 A_BMP_C res/Control10_a.bmp_C
+Control11 RGB_BMP_C res/Control11_rgb.bmp_C
+Control11 A_BMP_C res/Control11_a.bmp_C
+
+StopButton RGB_BMP_C res/Stop_Button_rgb.bmp_C
+StopButton A_BMP_C res/Stop_Button_a.bmp_C
+StopButtonOver RGB_BMP_C res/Stop_ButtonOver_rgb.bmp_C
+StopButtonOver A_BMP_C res/Stop_ButtonOver_a.bmp_C
+StopButtonPressed RGB_BMP_C res/Stop_ButtonPressed_rgb.bmp_C
+StopButtonPressed A_BMP_C res/Stop_ButtonPressed_a.bmp_C
+
+DrumScreenBackground BMP_C res/DrumScreen_Background.bmp_C
+DrumScreenButtons RGB_BMP_C res/DrumScreen_Buttons_rgb.bmp_C
+DrumScreenButtons A_BMP_C res/DrumScreen_Buttons_a.bmp_C
+DrumScreenButtonsAlt RGB_BMP_C res/DrumScreen_ButtonsAlt_rgb.bmp_C
+DrumScreenButtonsAlt A_BMP_C res/DrumScreen_ButtonsAlt_a.bmp_C
+DrumScreenButtonsOver RGB_BMP_C res/DrumScreen_ButtonsOver_rgb.bmp_C
+DrumScreenButtonsOver A_BMP_C res/DrumScreen_ButtonsOver_a.bmp_C
+DrumScreenButtonsPressed RGB_BMP_C res/DrumScreen_ButtonsPressed_rgb.bmp_C
+DrumScreenButtonsPressed A_BMP_C res/DrumScreen_ButtonsPressed_a.bmp_C
+DrumScreenButtonsPressedAlt RGB_BMP_C res/DrumScreen_ButtonsPressedAlt_rgb.bmp_C
+DrumScreenButtonsPressedAlt A_BMP_C res/DrumScreen_ButtonsPressedAlt_a.bmp_C
+
+SongGridLine RGB_BMP_C res/Song_GridLine_rgb.bmp_C
+SongGridLine A_BMP_C res/Song_GridLine_a.bmp_C
+SongMarkerLine RGB_BMP_C res/Song_MarkerLine_rgb.bmp_C
+SongMarkerLine A_BMP_C res/Song_MarkerLine_a.bmp_C
+SongL RGB_BMP_C res/Song_L_rgb.bmp_C
+SongL A_BMP_C res/Song_L_a.bmp_C
+SongR RGB_BMP_C res/Song_R_rgb.bmp_C
+SongR A_BMP_C res/Song_R_a.bmp_C
+SongBlank RGB_BMP_C res/Song_Blank_rgb.bmp_C
+SongBlank A_BMP_C res/Song_Blank_a.bmp_C
+SongPattern RGB_BMP_C res/Song_Pattern_rgb.bmp_C
+SongPattern A_BMP_C res/Song_Pattern_a.bmp_C
+SongPatternMisfit RGB_BMP_C res/Song_PatternMisfit_rgb.bmp_C
+SongPatternMisfit A_BMP_C res/Song_PatternMisfit_a.bmp_C
+
+PatternNormalHit RGB_BMP_C res/Pattern_NormalHit_rgb.bmp_C
+PatternNormalHit A_BMP_C res/Pattern_NormalHit_a.bmp_C
+PatternAccentHit RGB_BMP_C res/Pattern_AccentHit_rgb.bmp_C
+PatternAccentHit A_BMP_C res/Pattern_AccentHit_a.bmp_C
+PatternMouseOver RGB_BMP_C res/Pattern_MouseOver_rgb.bmp_C
+PatternMouseOver A_BMP_C res/Pattern_MouseOver_a.bmp_C
+
+SoundsMinus RGB_BMP_C res/Sounds_Minus_rgb.bmp_C
+SoundsMinus A_BMP_C res/Sounds_Minus_a.bmp_C
+SoundsPlus RGB_BMP_C res/Sounds_Plus_rgb.bmp_C
+SoundsPlus A_BMP_C res/Sounds_Plus_a.bmp_C
+
+
+// Scrollbar graphics
+/////////////////////
+
+ScrollUpNormal RGB_BMP_C res/ScrollUp_Normal_rgb.bmp_C
+ScrollUpOver RGB_BMP_C res/ScrollUp_Over_rgb.bmp_C
+ScrollUpPressed RGB_BMP_C res/ScrollUp_Pressed_rgb.bmp_C
+ScrollUpNormal A_BMP_C res/ScrollUp_Normal_a.bmp_C
+ScrollUpOver A_BMP_C res/ScrollUp_Over_a.bmp_C
+ScrollUpPressed A_BMP_C res/ScrollUp_Pressed_a.bmp_C
+
+ScrollThumbTop RGB_BMP_C res/ScrollThumb_Top_rgb.bmp_C
+ScrollThumbMid RGB_BMP_C res/ScrollThumb_Mid_rgb.bmp_C
+ScrollThumbTop A_BMP_C res/ScrollThumb_Top_a.bmp_C
+ScrollThumbMid A_BMP_C res/ScrollThumb_Mid_a.bmp_C
+
+ScrollNormal RGB_BMP_C res/ScrollNormal_rgb.bmp_C
+ScrollNormal A_BMP_C res/ScrollNormal_a.bmp_C
+
+// Scrollbar data pack
+////////////////////////////
+
+Scroll RCDATA
+BEGIN
+0L,15L,16L,7L,
+"ScrollUpNormal\0xxxxx",
+"ScrollUpPressed\0xxxx",
+"ScrollUpOver\0xxxxxxx",
+"\0xxxxxxxxxxxxxxxxxxx", // Down is mirror image
+"\0xxxxxxxxxxxxxxxxxxx",
+"\0xxxxxxxxxxxxxxxxxxx",
+"ScrollThumbTop\0xxxxx",
+"\0xxxxxxxxxxxxxxxxxxx",
+"ScrollThumbMid\0xxxxx",
+"ScrollNormal\0xxxxxxx",
+END
+
+
+/*
+ScrollBlackUp RAW_C res/ScrollBlackUp.raw_c
+ScrollWhiteUp RAW_C res/ScrollWhiteUp.raw_c
+ScrollGreyUp RAW_C res/ScrollGreyUp.raw_c
+ScrollBlackDown RAW_C res/ScrollBlackDown.raw_c
+ScrollWhiteDown RAW_C res/ScrollWhiteDown.raw_c
+ScrollGreyDown RAW_C res/ScrollGreyDown.raw_c
+ScrollBlackThumb RAW_C res/ScrollBlackThumb.raw_c
+ScrollBlackMid RAW_C res/ScrollBlackMid.raw_c
+ScrollWhiteThumb RAW_C res/ScrollWhiteThumb.raw_c
+ScrollWhiteMid RAW_C res/ScrollWhiteMid.raw_c
+
+// Black scrollbar data pack
+////////////////////////////
+
+ScrollBlack RCDATA
+BEGIN
+0L,12L,7L,4L,
+"ScrollBlackUp\0xxxxxx",
+"ScrollWhiteUp\0xxxxxx",
+"ScrollGreyUp\0xxxxxxx",
+"ScrollBlackDown\0xxxx",
+"ScrollWhiteDown\0xxxx",
+"ScrollGreyDown\0xxxxx",
+"ScrollBlackThumb\0xxx",
+"ScrollBlackThumb\0xxx",
+"ScrollBlackThumb\0xxx",
+"ScrollBlackMid\0xxxxx",
+END
+
+// White scrollbar data pack
+////////////////////////////
+
+ScrollWhite RCDATA
+BEGIN
+0L,12L,7L,4L,
+"ScrollWhiteUp\0xxxxxx",
+"ScrollBlackUp\0xxxxxx",
+"ScrollGreyUp\0xxxxxxx",
+"ScrollWhiteDown\0xxxx",
+"ScrollBlackDown\0xxxx",
+"ScrollGreyDown\0xxxxx",
+"ScrollWhiteThumb\0xxx",
+"ScrollWhiteThumb\0xxx",
+"ScrollWhiteThumb\0xxx",
+"ScrollWhiteMid\0xxxxx",
+END
+
+// Hit graphics 26x20
+/////////////////////
+
+HitNormal RAW_C res/HitNormal.raw_c
+HitAccent RAW_C res/HitAccent.raw_c
+
+// Offset arrows 5x5
+
+OffsetLeft RAW_C res/OffsetLeft.raw_c
+
+// General graphics of screen - 620x417
+/////////////////////////////
+
+gradient RAW_C res/gradient.raw_c
+sections RAW_C res/sections.raw_c
+mouseover RAW_C res/mouseover.raw_c
+mousedown RAW_C res/mousedown.raw_c
+text RAW_C res/text.raw_c
+alternatetext RAW_C res/alternatetext.raw_c
+
+// whole thing, 620x417
+//mainscreen RAW_C res/mainscreen.raw_c	
+
+// bottom-left section that differs when loop is selected, 163x34
+//loop RAW_C res/loop.raw_c	
+
+// "over" & "down" drum name part of pattern list, 80,69 - 90x120
+//patternlisto RAW_C res/patternlisto.raw_c		
+//patternlistd RAW_C res/patternlistd.raw_c		
+
+// "over" & "down" list of drum files available, 7,222 143x120
+//drumlisto RAW_C res/drumlisto.raw_c		
+//drumlistd RAW_C res/drumlistd.raw_c		
+
+// "over" & "down" of drum/loop selector buttons, 7,199 - 79x20
+//drumloopo RAW_C res/drumloopo.raw_c		
+//drumloopd RAW_C res/drumloopd.raw_c		
+
+// "over" & "down" of the 2 effect spaces, 187,219 - 148x40
+//effectso RAW_C res/effectso.raw_c	
+//effectsd RAW_C res/effectsd.raw_c	
+
+// "over" & "down" list of effects, 172,262 - 141x117
+//effectlisto RAW_C res/effectlisto.raw_c	
+//effectlistd RAW_C res/effectlistd.raw_c	
+
+// "over" & "down" of folder button, 146,199 - 24x20
+//foldero RAW_C res/foldero.raw_c		
+//folderd RAW_C res/folderd.raw_c		
+
+// "over" & "down" of "go" & "write", 7,7 - 67x32
+//toprow1o RAW_C res/toprow1o.raw_c	
+//toprow1d RAW_C res/toprow1d.raw_c	
+
+// normal, over, down of "stop" - 7,7 - 32x32
+//stopu RAW_C res/stopu.raw_c
+//stopo RAW_C res/stopo.raw_c
+//stopd RAW_C res/stopd.raw_c
+
+// "over" & "down" of the other top row buttons 363,7 - 250x32
+//toprow2o RAW_C res/toprow2o.raw_c	
+//toprow2d RAW_C res/toprow2d.raw_c	
+*/
+
+// Title bar graphics
+/////////////////////
+
+// Buttons (46x44)
+minbuttonu RAW_C res/MinButtonU.raw_c
+minbuttono RAW_C res/MinButtonO.raw_c
+minbuttond RAW_C res/MinButtonD.raw_c
+
+maxbuttondis RAW_C res/MaxButtonDis.raw_c
+
+closebuttonu RAW_C res/CloseButtonU.raw_c
+closebuttono RAW_C res/CloseButtonO.raw_c
+closebuttond RAW_C res/CloseButtonD.raw_c

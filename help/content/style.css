@@ -1,0 +1,152 @@
+BODY
+{
+  background: white;
+  color: black;
+}
+A,A:visited
+{
+  font-weight:bold;
+  color:rgb(171,147,116);
+  text-decoration:none;
+}
+A:hover
+{
+  text-decoration:underline;
+}
+A:active
+{
+  color: rgb(238,231,221);
+}
+H1
+{
+  font: bold 14px Verdana, sans-serif;
+  background: rgb(238,231,221);
+  color: black;
+  padding: 4px;
+  margin-bottom: 12px;
+  margin-left:-20px;
+}
+H2
+{
+  font: 14px Verdana, sans-serif;
+  background: rgb(228,238,221);
+  color:black;
+  padding: 4px;
+  margin-bottom: 12px;
+  margin-left:-20px;
+}
+H3
+{
+  font: 14px Verdana, sans-serif;
+  margin-bottom: 12px;
+  margin-left:-20px;
+}
+H4
+{
+  font-weight: bold;
+  margin-bottom: 12px;
+} 
+P
+{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+UL
+{
+}
+EM
+{
+  font-weight:bold;
+  font-style:normal;
+}
+IMG
+{
+  display:block;
+  margin-top:16px;
+  margin-bottom:16px;
+}
+DIV.terminology
+{
+  margin-top:16px;
+  margin-bottom:16px;
+  border: 2px solid rgb(235,234,223);
+}
+DIV.terminology DIV.term
+{
+  line-height:12px;
+  padding-bottom:4px;
+  margin:0px;
+  font-weight: bold;
+  background: rgb(235,234,223);
+}
+DIV.terminology DIV.definition
+{
+  line-height:16px;
+  padding:4px;
+}
+DIV.terminology DIV.end
+{
+  clear:both;
+  font-size:0px;
+  line-height:0px;
+}
+LI
+{
+  margin-top:8px;
+  margin-bottom:8px;
+}
+
+P.sidetrack
+{
+  background-color: rgb(235,234,223);
+  background-image: url("seealso.gif");
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  padding-top: 2px;
+  padding-bottom:2px;
+}
+
+DIV.hidden,DIV.siblings
+{
+  display:none;
+}
+DIV.main
+{
+  font: 12px Verdana, sans-serif;
+  line-height: 16px;
+  margin-left:20px;
+  margin-right:0px;
+  margin-top:25px;
+}
+DIV.location
+{
+  position:absolute;
+  top:4px;
+  left:10px;
+  width:350px;
+  font: 9px Verdana, sans-serif;
+}
+DIV.location DIV.link
+{
+  width:100%;
+/*  padding-right:10px;*/
+}
+DIV.linearnav
+{
+  width:100%;
+  border-top: 2px solid rgb(235,234,223);
+  padding-top: 2px;
+  margin-top:16px;
+  border-bottom: 20px solid white;
+}
+DIV.prev
+{
+  float:left;
+  width:50%;
+}
+DIV.next
+{
+  float:left;
+  width:50%;
+  text-align:right;
+}

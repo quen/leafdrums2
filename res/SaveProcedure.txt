@@ -1,0 +1,51 @@
+
+
+NOTE these need to be saved in chunks, song screen and drum screen do 
+NOT include the control bar.
+
+Background (rgb) - coloured background + inactive text
+
+Buttons (rgba) - 
+  60% white highlights + button outline + button text
+    + control info 1 + level indicator
+
+Buttons-alt (rgba) -
+  60% white highlights + button outline + no button text
+    + control info 2
+
+Over (rgba) -
+  100% white highlights + button outline + button text
+    + control info 3
+
+Pressed (rgba)
+  Black highlights (+ 100%white also) + button outline + button text
+
+Pressed-alt (rgba)
+  Black highlights (+ 100%white also) + button outline + no button text
+
+
+To do RGBA -
+  Select and ctrl-shift-c
+  new image (check size), paste
+  ctrl-a
+  ctrl-up, down
+  new layer
+  fill 100% black
+  turn off black layer
+  save copy (RGB)
+  turn off rgb layer 
+  turn on black layer
+  mode grayscale (+flatten)
+  save copy (A)
+
+
+Button background inverse = Button background, invert, 20% opacity
+
+I SWEAR I HAD A FONTS CHART! WTF?!
+
+8px spacing 1 verdana bold anti-aliased
+
+
+
+Temp info-  I moved everything from the horiz.scrollbar down 8px, extended height 8px, 
+and moved those top right buttons 118 px.

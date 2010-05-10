@@ -1,0 +1,55 @@
+BODY
+  {
+  font: 17px Arial, sans-serif;
+  color:black;
+  background-color:white;
+  }
+.main
+  {
+  position:absolute;
+  line-height: 24px;
+  left: 180px;
+  width: 300px;
+  }
+.links
+  {
+  position:absolute;
+  line-height: 24px;
+  left: 10px;
+  width: 100px;
+  }
+LI
+  {
+  list-style-type:disc;
+  }
+H1
+  {
+  font: 17px Arial, sans-serif;
+  font-weight: bold;
+  }
+H2
+  {
+  font: 17px Arial, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  }
+A:link
+  {
+  text-decoration:none;
+  color:#5e7d04;
+  }
+A:visited
+  {
+  text-decoration:none;
+  color:#532700;
+  }
+A:hover
+  {
+  text-decoration:none;
+  background-color:#859042;
+  color: black;
+  }
+H1.link /* This is really bad thing to do I can't get IE5 to align the link correctly otherwise */
+  {
+  font-weight:normal;
+  }

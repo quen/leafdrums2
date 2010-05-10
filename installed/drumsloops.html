@@ -1,0 +1,45 @@
+<html>
+<head>
+<link rel=stylesheet type="text/css" href=style.css>
+<title>leafDrums 1.0: basic concepts</title>
+</head>
+<body>
+<div class=links>
+<h1 class=link><a href="index.html">front page</a></h1>
+</div>
+<div class=main>
+<h1>Understanding the basic concepts</h1>
+
+<h2>Drums and loops</h2>
+
+<p>At the simplest level, leafDrums can play either <i>drum</i> or <i>loop</i> sounds.</p>
+
+<p><i>Drum</i> sounds are WAV files. Normally these contain a percussive sound which lasts only
+a short time. The sound is always played at the same pitch, although its volume and panning position
+(left-right stereo) may be altered, and sometimes its length or the strength of its attack can also 
+be changed. </p>
+
+<p><i>Loops</i> are also WAV files. However, these normally represent entire drum-loops. They are
+stretched depending on the tempo of the current rhythm, in order to exactly fit a certain number of beats
+(for example, one bar). This results in pitch changes.</p>
+
+<p>In leafDrums, you can find drums and loops in the list that occupies the bottom left of the display.</p>
+
+<h2>Patterns, bars and lines</h2>
+
+<p>A <i>pattern</i> is an entire drum pattern, from beginning to end. You can save and load patterns.
+Normally a pattern consists of a certain number of bars, which are then repeated.</p>
+
+<p>A <i>bar</i> is a unit of time - in leafDrums, it is always 4 beats [or 16 time units] long. 
+The length of a beat depends on the current tempo in beats-per-minute.</p>
+
+<p>A <i>line</i> is one horizontal line of the pattern. Each line represents one drum sound (for example,
+a bass drum). In the line you can specify when that particular sound should play.</p>
+
+<p>Lines take up the top half of the screen, where the volume level for each line is displayed along
+with the drum or loop sound used in that line, and the actual data for that line (when there is a "hit" on
+that drum). One line is "selected" which means that you can alter its sound settings such as volume, 
+panning and effects - to select a line, click on its drum name.</p>
+
+</div></body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+<head>
+<link rel=stylesheet type="text/css" href=style.css>
+<title>leafDrums 1.0: effects</title>
+</head>
+<body>
+<div class=links>
+<h1 class=link><a href="index.html">front page</a></h1>
+</div>
+<div class=main>
+<h1>Applying effects</h1>
+
+<p>You can apply effects such as delay, phaser, flanger, and gate to drum or loop sounds.</p>
+
+<h2>Basics</h2>
+
+<p>To apply an effect to a sound, first select that line. Then select either of the numbered slots
+under "effects", 1 or 2. Then choose an effect type from the list. Finally, adjust the effect settings 
+that appear. You'll normally need to alter these settings, in particular "effect mix" - this usually
+defaults all the way to the left, which means that the effect is not actually mixed into the resulting
+sound so you won't hear it.</p>
+
+<h2>The effect processing chain</h2>
+
+<p>Sounds are processed in the following order:</p>
+
+<ul>
+<li>Original sound (after conversion to stereo 44 kHz)
+<li>Adjustments from the bottom-left panel (length, fade-in, fade-out, or stretching)
+<li>Effect #1
+<li>Effect #2
+<li>Panning and volume adjustment
+</ul>
+
+<p>This processing is not carried out "live" - sounds are recalculated only when the situation
+changes, for example when you alter an effect or effect settings. Normally you won't need to know
+this, but there are a few situations where it can have an effect. Most notably, the total length
+of sounds is limited, so you can't make a sound echo forever using the delay option, after a short
+time it will fade.</p>
+
+</div></body>
+</html>

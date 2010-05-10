@@ -1,0 +1,2791 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<help>
+
+ <title>leafDrums 2.3 help</title>
+ <prefix>leafDrums 2.3: </prefix>
+
+ <copycontent>
+  <file><name>style.css</name><target></target></file>
+  <file><name>seealso.gif</name><target></target></file>
+ </copycontent>
+
+ <section id="tutorial" showdepth="0">
+  <title>Tutorial</title>
+
+  <summary>
+   <p>
+    If you're new to leafDrums, you should begin by going through this tutorial,
+	which takes around ten minutes and will ensure you have a good basic understanding
+	of the program.
+   </p>
+  </summary>
+
+  <content>
+   <p>
+    The tutorial takes about ten minutes. Begin by clicking on 'Introduction'.
+   </p>
+  </content>
+
+  <page id="introduction">
+   <title>Introduction</title>
+
+   <content>
+    <p>
+	 This tutorial introduces you to leafDrums. If you work through it in order
+	 (switching between this tutorial and the program) you will have a good grasp of
+	 the basic concepts you need to understand, and you'll have created a basic
+	 drum rhythm.
+	</p>
+
+	<p>
+	 It should take between five and fifteen minutes (depending on how fast you read
+	 and work) to complete the tutorial.
+	</p>
+
+	<p>
+	 The last page of the tutorial has helpful tips to point you in the right direction
+	 when you want to achieve more advanced results - so even if you think you don't
+	 need to work through the whole tutorial, it's worth checking that out.
+	</p>
+
+	<p class="sidetrack">
+	 One last thing before we start; when you see text like this, it is a sidetrack.
+	 You don't need to read the text or follow the link to complete the tutorial.
+	</p>
+
+    <p>
+	 Now let's begin the tutorial by taking a look at the leafDrums song screen,
+	 which is what you see when the program starts.
+	</p>
+   </content>
+  </page>
+
+  <page id="songscreen">
+   <title>The song screen</title>
+
+   <content>
+    <p>
+     leafDrums begins with the song screen. This screen shows the song
+     (which is a collection of patterns), the drums used in the song,
+     and one of the patterns in the song.
+    </p>
+
+	<p>
+	 <image file="songscreen.gif" alt="The song screen"/>
+	</p>
+
+	<p class="sidetrack">
+	 <link id="../reference/songscreen">More information about the song screen...</link>
+	</p>
+
+	<p>
+	 Notice the 'mouse icons' in various parts of the screen? They describe
+	 what will happen if you click the mouse in that area, and any keys
+	 (Shift, Ctrl) that might modify that behaviour. This information is there
+	 on-screen so that you don't have to constantly refer back to the on-line
+	 help in normal use.
+	</p>
+
+	<terminology>
+	 <term>Song</term>
+	 <definition>
+	  <em>Songs</em> are what you create in leafDrums. The song contains patterns,
+	  drum sounds, and so on. The song controls which patterns are played in each
+	  bar.
+	 </definition>
+	</terminology>
+
+	<terminology>
+	 <term>Pattern</term>
+	 <definition>
+	  A <em>pattern</em> contains some drum hits. (For example, you might make a
+	  pattern that contained four kick drum hits, one on each beat.) Patterns
+	  are always one bar long. You place a pattern into a specific bar
+	  of the song (or more than one bar) so that it will be played as part of
+	  the song.
+	 </definition>
+	</terminology>
+
+    <p>
+	 In order to create the song, you place drum hits into patterns. You
+	 then place the patterns into bars of the song. If you want the same pattern
+	 to play multiple times, you place it into multiple bars.
+	</p>
+
+	<p>
+	 Next, we'll begin to do just that.
+	</p>
+   </content>
+  </page>
+
+  <page id="gettingstarted">
+   <title>Getting started</title>
+
+   <content>
+
+    <p>
+	 Let's begin creating a simple rhythm. Along the way, you'll see most of
+	 the basic features leafDrums has to offer.
+	</p>
+
+	<subhead>Naming patterns</subhead>
+
+	<p>
+	 First we'll rename the existing pattern, which is currently (and
+	 rather unimaginatively) titled '1'. Renaming patterns doesn't make any difference
+	 as far as the system is concerned, but it can make the rhythm a lot clearer
+	 to you. It's good practice to give each pattern a reasonably meaningful name
+	 (as far as possible in the small space available).
+	</p>
+
+	<p class="do">
+	 Click on the 'Rename' button in the pattern display. Then type a short name
+	 for the pattern, such as 'main', and press the Enter key.
+	</p>
+	<p class="result">
+	 <image file="renamed.gif" alt="Renamed pattern"/>
+	</p>
+
+	<subhead>Placing patterns into song</subhead>
+
+	<p>
+   leafDrums begins with a single copy of this pattern in the first (and, so
+	 far, only) bar of the song.
+	</p>
+  <p>
+    <image file="initialpattern.gif" alt="Initial pattern"/>
+  </p>
+  <p>
+    If you create other patterns, or want more than one copy of the same
+    pattern, you will need to add those to the song yourself.
+  </p>
+  <p>
+    Let's suppose we want to add a second copy of the pattern in the song,
+    so that it plays twice.
+  </p>
+
+	<p class="do">
+	 Click in the song display, in the blank area just beneath the number 2 and
+   to the right of the second orange line.
+	</p>
+	<p class="result">
+    <image file="secondpattern.gif" alt="After placing second pattern"/>
+	</p>
+
+	<p>
+	  The 'main' pattern is now included in the second bar of the song.
+	  Note that one other thing happened: an extra blank space has been added
+    to the right (in the location for the third bar).
+	</p>
+
+	<p>
+    The blank space in bar three is so you can place another pattern there.
+    leafDrums always gives you one space beyond the length of the song, so that
+    you can extend the song. (If you actually want a blank space in your song,
+    you'll have to first put a pattern there, then add a pattern in the following bar
+    as well, and finally remove the first pattern by clicking on it again.)
+  </p>
+
+  <subhead>L and R markers</subhead>
+
+  <p>
+    The orange L and R markers indicate the area of song you are working on.
+    When you click Play, the song will play from the L marker up to the R marker.
+  </p>
+  <p>
+    Notice that the L and R markers currently include only the first bar. You
+    need to move the R marker to after the second bar.
+  </p>
+
+  <p class="do">
+    Move the mouse pointer over the vertical dotted line just to the right of
+    bar two. You should notice the help text below the song change to indicate
+    that the mouse buttons now have different behaviour. Click the right mouse
+    button to set the R marker.
+  </p>
+  <p class="result">
+    <image file="rmarker.gif" alt="After moving R marker"/>
+  </p>
+
+  <subhead>Tracks</subhead>
+
+	<p>
+    You may be wondering why there is a blank row underneath the patterns you
+    placed. This is a second <em>track</em>. If you place patterns in the
+    second track, leafDrums will give you a blank third track to use, and so on.
+	</p>
+
+	<terminology>
+	 <term>Track</term>
+	 <definition>
+	  Each song can contain one or more <em>tracks</em>. Each bar of the track can
+	  have a single pattern assigned to it, or it can be blank. All the tracks
+    play at once, so when you want to play more than one pattern at a time, you
+    place the multiple patterns across several tracks.
+    Tracks have independent level controls.
+	 </definition>
+	</terminology>
+
+  <subhead>Moving on...</subhead>
+  <p>
+    We've created a song which includes the same pattern twice, and set that
+    song so that both patterns will be played back. However,
+    our pattern doesn't contain any drum hits yet, so it will be silent.
+	  Next, we'll place some hits.
+	</p>
+   </content>
+  </page>
+
+  <page id="firstplay">
+   <title>Let's make some noise</title>
+
+   <content>
+    <p>
+	 In this page of the tutorial, we're going to complete a very simple rhythm, and
+	 hear it play.
+	</p>
+
+	<subhead>The pattern display</subhead>
+
+	<p>
+	 <image file="patterndisplay.gif" alt="The pattern display"/>
+	</p>
+
+	<p class="sidetrack">
+	 <link id="../reference/patterndisplay">More information about the pattern display...</link>
+	</p>
+
+	<p>
+	 The pattern display shows where you have placed drum hits in the current pattern.
+	 Hits are marked with circles; thin circles for normal hits, thick circles for
+	 accented hits. They are shown on the grid, which indicates beats and quarter beats
+	 by different strength of line.
+	</p>
+
+	<subhead>Adding drum hits</subhead>
+
+	<p class="do">
+	 Add some drum hits in the first <em>line</em> of the pattern. For example,
+	 you might want to add one hit on each beat. To add a hit, simply click
+	 where you would like to place it.
+	</p>
+	<p class="result">
+	 <image file="addedhits.gif" alt="The added hits"/>
+	</p>
+
+	<terminology>
+	 <term>Line</term>
+	 <definition>
+	  A song contains <em>lines</em>. Each line corresponds to one drum sound
+	  that is included in the song. The lines are displayed on the song screen,
+	  stretching across the drums display (which shows the drum sound, level,
+	  and left-right panning that are associated with that line) and the
+	  pattern display (which shows the drum hits on that line in the current
+	  pattern).
+	 </definition>
+	</terminology>
+
+	<p>
+	 As before, once you have used a line, leafDrums adds another one below it
+	 so that you can place hits for another drum sound.
+	</p>
+
+	<p>
+	 You've now added some drum hits. And this pattern is included in the first
+	 bar of the song, so when you play the song you should hear those hits right
+	 away. Only one small problem - you haven't chosen a drum sound for the hits.
+	</p>
+
+	<subhead>The drum screen</subhead>
+
+	<p class="do">
+	 Click on the 'Click to set...' button in the drums display. (There are two
+	 'Click to set...' buttons; click the upper one, since it corresponds to the
+	 line you placed hits on.)
+	</p>
+
+	<image file="drumscreen.gif" alt="The drum screen"/>
+
+	<p class="sidetrack">
+	 <link id="../reference/drumscreen">More information about the drum screen...</link>
+	</p>
+
+	<p>
+	 The drum screen contains two sections; a list of available sounds, and an
+	 audio processing section. leafDrums has a decent set of fun audio processing
+	 features, but we won't be covering those in the tutorial; when you <em>do</em>
+	 want to know about audio processing, there is a reference topic about the
+	 <link id="../reference/audiodisplay">audio processing display</link>.
+	</p>
+
+	<subhead>Selecting a sound</subhead>
+
+	<p class="do">
+	 Click on a drum sound from the list on the left.
+	</p>
+	<p class="result">
+	 <image file="selecteddrum.gif" alt="A selected drum sound"/>
+	</p>
+
+	<p>
+	 You've now selected a drum sound for this line of the song and therefore the
+	 pattern.
+	</p>
+
+	<p>
+	 Before we play the song, this is a good moment to explain how the sounds list
+	 works.
+	</p>
+
+	<subhead>The sounds list</subhead>
+
+	<p>
+	 The list displays every .wav and .ogg sound file within a certain folder or
+	 folders on your hard disk. (By default, this is the 'Sounds' sub-folder
+	 underneath the folder where you installed leafDrums.)
+	</p>
+
+	<p>
+	 Files that are within sub-folders of that folder are included too. You
+	 can see here that there are several folders: the 'Drums' folder contains
+	 the 'Cymbals' and 'Kicks' folder, and a few others. If you want to hide
+	 or show drums within a certain folder, click its title (this is useful
+	 when you have more drums).
+	</p>
+
+	<p>
+	 leafDrums comes with a very limited selection of drum sounds so you will
+	 definitely want to obtain more, perhaps by downloading them from the
+	 Internet or sampling them yourself. In addition, when you create tracks
+	 in leafDrums you might also want custom sounds such as vocals; you might
+	 even want to include short melodic passages or bass lines so that you can put
+	 together an entire track in leafDrums. (leafDrums is not really designed
+	 for this, however, and you can't incorporate very long samples such as
+	 vocals for an entire track.)
+	</p>
+
+	<p>
+	 When you want to add a sound file so that leafDrums can use it, the
+	 easiest way is to click the 'Open' button next to the little folder icon 
+	 (<em>not</em> the big Open button at the top of the screen).
+	 This opens a standard view on to the folder where drums are stored. You
+	 can then drag your own sounds into that folder or its subfolders, or
+	 create new subfolders. Once you're done, go back to leafDrums and click
+	 the 'Refresh' button, and you'll see the new sounds.
+	</p>
+	
+	<p>
+	 leafDrums supports all .wav formats that your computer can read. It also
+	 supports compressed .ogg files. (It does not support MP3s.)
+	</p>
+
+	<subhead>Playing the song!</subhead>
+
+	<p class="do">
+	 Anyway, you've created a very simple rhythm. Play it by clicking on the
+	 'Play' button at the top left.
+	</p>
+
+	<p>
+	 You should hear the rhythm. If you like, you can change the drum sound
+	 now, by clicking another sound. You can do this even while the song is
+   playing - everything in leafDrums can be changed during playback, although
+   it might take a second to react.
+	</p>
+
+	<p>
+	 When you get fed up of it, notice that the 'Play' button has turned into
+	 'Stop'. Click the button again to stop the rhythm.
+	</p>
+
+	<subhead>Returning to the song screen</subhead>
+
+	<p>
+	 You probably want to return to the song screen so that you can adjust
+	 the levels and add more drums to the rhythm.
+	</p>
+
+	<p>
+	 There are two ways to get back to the song screen:
+	</p>
+
+	<ul>
+	 <li>Click either one of the 'Song' buttons at the bottom of the screen.</li>
+	 <li>Press the F5 key.</li>
+	</ul>
+
+	<p>
+	 If you use the program a lot, you'll get used to that shortcut. (Note that
+	 F6 works the other way, to take you to the drum screen when you're on
+	 the song screen. There are other <link id="../reference/keyboard">keyboard
+   shortcuts</link> that you might want to learn.)
+	</p>
+
+	<p>
+	 In any case, you should now be back at the song screen, and ready to
+	 add more sounds to your rhythm.
+	</p>
+
+	<p>
+	 This is the end of the step-by-step tutorial, but the next page includes
+	 some useful information that should help you get going with more advanced
+	 rhythms.
+	</p>
+   </content>
+  </page>
+
+  <page id="fromhere">
+   <title>Where to go from here</title>
+
+   <content>
+
+    <p>
+	 You've now seen how to create a very simple rhythm in leafDrums. Here are some
+	 tips to help you get the best out of the program from now on.
+	</p>
+
+	<p>
+	 The first thing you should remember is that you can always access this help file
+	 (by clicking the Help button). Every control on the screen is explained in the
+	 <link id="../reference/">reference</link> section, and the
+	 <link id="../advanced/">advanced</link> section contains useful advice when you're
+	 looking to take things that bit further. Whenever you're a bit confused about
+	 something or not quite sure how it is supposed to work, <em>do</em> check the
+	 help file.
+	</p>
+
+	<p>
+	 Apart from that...
+	</p>
+
+	<subhead>Top tips</subhead>
+
+	<ul>
+	 <li><em>Get more drum sounds.</em><br/>
+	     The drums provided with leafDrums are very basic indeed. Although you
+		 can get some quite varied sounds if you apply creative
+		 <link id="../reference/audiodisplay">effects</link>, they still aren't
+		 sufficient for real use; they're intended only so that you can get
+		 started with the program right away.<br/>But the good news is that there are
+		 many places where you can download drum sounds as .wav files online;
+		 some of these are linked from the
+		 <link url="http://www.leafdigital.com/software/leafdrums/">leafDrums web
+		 page</link>.</li>
+
+     <li><em>Make your own sounds.</em><br/>
+	     Don't forget that you can sample your own sounds too (by recording them as
+		 standard CD-quality .wav files). You could
+		 record your favourite drum machine; record live drums; or sample beats and
+		 loops from CDs that you like.</li>
+
+	 <li><em>Avoid repeating yourself.</em><br/>
+	     leafDrums can play more than one pattern at a time, if you use different
+		 tracks. Use this facility to place common parts of your rhythm into
+		 different patterns; this will save you having to re-do the same hi-hat
+		 sequence in different patterns.</li>
+
+	 <li><em>Use accurate timing for more interesting rhythms.</em><br/>
+	     Rather than positioning every drum on a beat or quarter beat, remember
+		 to turn on 'fine grid' occasionally so that you can get the timing just
+		 right. You might also want to use triplets sometimes.<br/>
+		 <link id="../reference/patterndisplay">(More information on the
+		 pattern display...)</link></li>
+
+	 <li><em>Use repeats.</em><br/>
+	     If you create a long repetitive song, you can save a lot of time by
+		 using arrows and flags on the song display to make some sections of
+		 the song repeat.<br/>
+		 <link id="../reference/songdisplay">(More information on the
+		 song display...)</link></li>
+
+	 <li><em>Join the mailing list or forum.</em><br/>
+	     If you use leafDrums seriously, you should consider joining the
+		 <link id="../program/community">mailing list or Web forum</link>, 
+		 where you can discuss the program with other users and perhaps 
+		 learn useful skills from them.</li>
+	</ul>
+
+	<p>
+	 Well, that's all for now. I hope you find the program easy to use and fun.
+	 If you <em>do</em> like it, please consider <link id="../program/ordering">registering
+	 (paying for) the
+	 program</link>.
+	</p>
+
+   </content>
+  </page>
+ </section>
+
+ <section id="reference" showdepth="1">
+  <title>Reference</title>
+
+  <summary>
+   <p>
+    The reference section contains information on every section of the
+  	two main screens of the program.
+   </p>
+  </summary>
+
+  <content>
+   <p>
+    This section contains information on every part of the two main screens.
+	  Select the screen you want more information about, then select a more
+	  precise item from the list within the screen page.
+   </p>
+   <p>
+    There is also a list of keyboard controls.
+   </p>
+  </content>
+
+  <page id="songscreen">
+   <title>Song screen</title>
+
+   <content>
+    <p>
+	 <image file="songscreen.gif" alt="Song screen"/>
+	</p>
+
+    <p>
+	 This screen contains four sections:
+	</p>
+
+	<ul>
+	 <li>The <em>control bar</em> (green background)<br/>
+	     Contains a Play button, a master level control, an output
+		 level and clipping indicator, and other buttons to perform
+		 standard tasks<br/>
+		 <link id="controlbar">More info...</link></li>
+	 <li>The <em>song display</em> (red-brown background)<br/>
+	     Shows the way that patterns have been put together to make
+		 a leafDrums song. Use this area to place patterns in the song,
+		 to change tempo, to adjust levels, etc.<br/>
+		 <link id="songdisplay">More info...</link></li>
+	 <li>The <em>drums display</em> (yellow-grey background)<br/>
+	     Shows the drums that are used by this song. Click on a drum to
+		 enter the <link id="drumscreen">drum screen</link> and alter
+		 it<br/>
+		 <link id="drumsdisplay">More info...</link></li>
+	 <li>The <em>pattern display</em> (blue background)<br/>
+	     Displays one pattern from the song. Click in the pattern to
+		 place drum hits<br/>
+		 <link id="patterndisplay">More info...</link></li>
+	</ul>
+   </content>
+
+   <page id="controlbar">
+	<title>Control bar</title>
+
+	<content>
+	 <p>
+	  The control bar is always available at the top of the leafDrums
+	  screen.
+	 </p>
+	 <p>
+	  <image file="controlbar.gif" alt="The control bar"/>
+	 </p>
+
+	 <subhead>Play/Stop</subhead>
+	 <p>
+	  The left-hand button begins playing the drum pattern. When the
+	  pattern is playing, the same button becomes 'Stop', and you can
+	  click to stop it.
+	 </p>
+	 <p>
+	  The pattern is played from the L marker (in the
+	  <link id="songdisplay">song display</link>) to the R marker.
+	  Once the R marker is reached, playback will either stop,
+    or (if 'Loop' is selected in the song display) loop back to the L
+	  marker and continue.
+	 </p>
+	 <p>
+	  You can see the current play position on the song display. When
+	  play reaches the end of the song display, the display
+	  automatically scrolls so that you can see the area being played.
+	 </p>
+	 <p>
+	  Instead of clicking the button, you can also play or stop the song
+	  using the space bar.
+	 </p>
+	 <p class="note">
+	  If you get errors when you click Play, or if playing does not
+	  seem to work properly, make sure that you have DirectX installed.
+	  leafDrums should work with any version of DirectX, but has only
+	  been tested with DirectX 8. (You can check which version you
+	  have installed by clicking Start, Run and typing 'dxdiag'. If
+	  that command gives an error, or if the version number it reports
+	  is less than 8, you should install DirectX 8 from
+	  <link url="http://www.microsoft.com/directx/">http://www.microsoft.com/directx/</link>.)
+	 </p>
+
+
+	 <subhead>Level slider</subhead>
+	 <p>
+	  This slider is the master level control for the song. Move it right
+	  or left to make the song louder or quieter.
+	 </p>
+
+	 <p>
+	  It is a digital level control (in other words, it is not simply
+	  connected to the 'Wave' output level in the sound card mixer),
+	  so it does affect the sound quality. For optimum quality, you
+	  should set the level control to the maximum which does not
+	  result in clipping of the sound (see below).
+	 </p>
+
+	 <subhead>Output level display</subhead>
+	 <p>
+	  This display shows the current output sound level, while the
+	  song is playing.
+	 </p>
+	 <p>
+	  If the output <em>clips</em>, a red section at the right of the
+	  level display will remain lit for a while. This indicates that
+	  you should reduce the level slider.
+	 </p>
+	 <p class="note">
+	  The level display is not always perfectly synchronized with the
+	  actual sound. (leafDrums calculates the output audio some way
+	  ahead of actual playback, so it's not always easy to work out
+	  which level should be displayed.)
+	 </p>
+
+	 <subhead>New</subhead>
+	 <p>
+	  Click New to create a new song. Any existing song
+	  is cleared (you will be prompted to save it if it was changed),
+	  and a new blank song is created.
+	 </p>
+
+	 <subhead>Open</subhead>
+	 <p>
+	  Click Open when you want to open a song you created before.
+	  You can only open files that were created with leafDrums 2.0+,
+	  not files that were created with older versions of this software
+	  or with any other program.
+	 </p>
+	 <p>
+	  The Open button is not used to load .wav files into your drum rhythm.
+	  Please see the <link id="drumscreen">drum screen reference</link>
+	  for more information on that.
+	 </p>
+
+	 <subhead>Save</subhead>
+	 <p>
+	  Click Save to save the current song. You will be prompted for
+	  a filename for the song.
+	 </p>
+	 <p>
+	  In the Save dialog, you can choose whether to embed audio
+	  data.
+	 </p>
+	 <ul>
+	  <li>
+	   If you embed audio data, all the sounds needed to play
+	   the song are included in the song file. You should use this
+	   option if you need to send a file to somebody else who might
+	   not have all the drum sounds that you do. This can result in
+	   large files.
+	  </li>
+	  <li>
+	   If you do not embed audio data, sounds are not included in
+	   the song file, and you will need to have the same sound files
+	   available when you want to open the song again. (Sounds
+	   are still embedded if you do not have them on your system, in
+	   other words if you previously opened a file with embedded
+	   sounds.)
+	  </li>
+	 </ul>
+	 <p>
+	  You can also save the song by pressing Ctrl+S. This saves the
+	  song under the same filename it already has, and does not
+	  embed audio data.
+	 </p>
+	 <p>
+	  leafDrums autosaves every five minutes (if the file has changed
+	  since last save). If the program crashes when you had unsaved work, 
+	  the autosaved version will automatically be opened next time you
+	  start leafDrums.
+	 </p>
+
+	 <subhead>Write</subhead>
+	 <p>
+	  Click Write to write the current song (between L and R markers)
+	  into an audio file. You can choose three file formats:
+	 </p>
+	 <ul>
+	  <li>44.1 kHz 16-bit stereo .wav.<br/>
+	      No quality loss. Appropriate for loading into other music software.</li>
+	  <li>High quality .ogg.<br/>
+	      High-quality compressed audio. Appropriate for files you want to share
+	      across the Internet where quality is important, such as drum loops you
+	      are providing for other musicians.</li>
+	  <li>Web quality .ogg.<br/>
+	      Lower quality compressed audio (equivalent to 128 kb/s MP3). Appropriate
+	      when quality is not the prime concern, such as if providing a version of
+	      a composition for Web page visitors.</li>
+	 </ul>
+	 <p>
+	  You will be prompted to select the number of copies you want
+	  (for example, if you have made a two-bar loop and you would like
+	  the saved file to contain four copies of this loop). Then
+	  you can enter a name for the file.
+	 </p>
+	 <p>
+	  If you want to write the entire song, make sure to set the L and
+	  R markers appropriately before you click Write.
+	 </p>
+   <p>
+     You can write the song into more than one file (so that either
+     each drum sound is in a different file, or each track is in a different file),
+     which may be useful if you have multi-track recording software.
+   </p>
+
+	 <subhead>Help</subhead>
+	 <p>
+	  You will be shocked to discover that the Help button brings up this help file.
+	 </p>
+
+	 <subhead>Quit</subhead>
+	 <p>
+	  Click Quit to exit the program. If you have made changes to the
+	  song, you will be given the chance to save it.
+	 </p>
+	</content>
+   </page>
+
+   <page id="songdisplay">
+	<title>Song display</title>
+
+	<content>
+	 <p>
+	  The song display shows which patterns have been placed into tracks
+	  of the song, and allows you to change this. It also includes general
+	  song options.
+	 </p>
+	 <p>
+	  <image file="songdisplay.gif" alt="The song display"/>
+	 </p>
+
+	 <subhead>Main display</subhead>
+	 <p>
+	  The main display shows each track of the song and the patterns that
+	  have been placed onto those tracks. Each bar of the song is numbered
+	  so that you can tell where you are if you're scrolling through a long
+	  song.
+	 </p>
+
+	 <subsubhead>Handling patterns in the song</subsubhead>
+	 <p>
+	  You can place a pattern onto a particular bar of a track by clicking
+	  in that space; that will add a copy of the current pattern (the one
+	  that is selected in the <link id="patterndisplay">pattern display</link>)
+	  at that point.
+	 </p>
+	 <p>
+	  Clicking in an occupied space will remove the pattern from that space.
+	 </p>
+	 <p>
+	  If you right-click on a pattern, that pattern will become the current
+	  pattern and will be shown in the pattern display.
+	 </p>
+	 <p>
+	  If you hold down Ctrl and click a blank space, this will create a new
+	  pattern and place it into the location where you clicked. (This can be
+	  more convenient than using the New button in the pattern display, since
+	  it places the pattern at the same time as creating it.)
+	 </p>
+	 <p>
+	  When you place a pattern in the last bar of the song, an extra blank
+	  bar is added for you. (This bar isn't considered as fully part of the
+	  song until you place something into it.)
+	 </p>
+	 <p>
+	  If you create more bars than will fit on the screen, you can use the
+	  horizontal scrollbar to move around the song.
+	 </p>
+
+	 <subsubhead>Handling tracks</subsubhead>
+	 <p>
+	  Each line of the song display represents one track. A track can have a
+	  single pattern at each bar. There are multiple tracks so that you can
+	  play multiple patterns at the same time.
+	 </p>
+	 <p>
+	  When you use the last, blank track (by placing a pattern in it),
+	  leafDrums automatically creates another track below, in case you need
+	  to use another one. Don't worry if you don't need to use it; blank
+	  tracks don't use processor time when playing.
+	 </p>
+	 <p>
+	  You can adjust the level for a track using the level slider by that
+	  track.
+	 </p>
+	 <p>
+	  If you use more than four tracks, you can use the vertical scrollbar
+	  to move between them.
+	 </p>
+	 <p class="note">
+	  There is no limit on the number of tracks, but
+	  if you use very many tracks which all play sounds at once, you may
+	  find that leafDrums cannot keep up when playing the song. If you
+	  are likely to test the limits, you should check out the topic on
+	  <link id="../advanced/performance">performance</link>.
+	 </p>
+
+	 <subsubhead>L and R markers</subsubhead>
+	 <p>
+	  The orange L and R markers indicate which part of the song will be
+	  played when you click Play. This is useful because
+	  you can make a small part of the song loop while you are working on
+	  it, without having to play the whole song.
+	 </p>
+	 <p>
+	  You can move the markers by clicking with the left (for L) or right
+	  (for R) mouse button on the grid lines between bars. The mouse cursor
+	  changes when you are in the right place to do this.
+	 </p>
+
+	 <subhead>Tempo control</subhead>
+	 <p>
+	  Tempo information is displayed in a narrow line below the tracks. 
+	  The tempo in beats per minute is displayed, followed by a time
+	  signature such as 4:4.
+	 </p>
+	 <p>
+	  Bar 1 always contains a tempo setting. Unless you add others, this
+	  tempo applies to the entire song.
+	 </p>
+	 <p>
+	  To change tempo, scroll so that bar 1 is visible, then click on the 
+	  tempo indicator that reads '120 4:4'. A dialog box will appear, allowing
+	  you to choose any tempo between 30 and 300 beats per minute, and any number
+	  of beats per bar.
+	 </p>
+	 <p>
+	  Time signatures are always displayed as :4, so if you 
+	  actually want	6:8 you will need to choose either 3:4 or 6:4 and set tempo
+	  appropriately.
+	 </p>
+	 <p>
+	  If you change the time signature, you need to make sure that patterns match the
+	  time signature by adding beats to, or removing beats from, each pattern. 
+	  Patterns that don't fit are shown in red in the song display. 
+	 </p>
+	 <p>
+	  You can add tempo or time signature changes to any bar of the song by clicking
+	  in the tempo line underneath that bar. To remove an existing tempo change,
+	  right-click on it.
+	 </p>
+
+	 <subhead>Insert</subhead>
+	 <p>
+	  Use Insert when you need to add bars to the middle of your song,
+	  shifting all the remaining bars along to make room.
+	 </p>
+	 <p>
+	  Insert operates across all tracks of the song at once, not on a
+	  single track.
+	 </p>
+	 <p>
+	  To use Insert, click the button and then move the mouse over the
+	  song so that the space between two bars is highlighted. This is
+	  where your new bar will be inserted.
+	 </p>
+	 <p>
+	  Click to insert a bar. If you want to insert more than one, hold
+	  down Ctrl while you click, and leafDrums will remain in insert mode.
+	 </p>
+	 <p>
+	  If you decide not to insert a bar after all, press Esc to cancel.
+	 </p>
+
+	 <subhead>Delete</subhead>
+	 <p>
+	  Use Delete when you need to remove bars from the middle of your song,
+	  shifting all the remaining bars along to fill the gap.
+	 </p>
+	 <p>
+	  Delete operates across all tracks of the song at once, not on a
+	  single track. It does not delete the actual patterns (use Delete in
+	  the <link id="patterndisplay">pattern display</link> if you want
+	  to do that).
+	 </p>
+	 <p>
+	  To use Delete, click the button and then move the mouse over the
+	  song so that the bar you want to delete is highlighted.
+	 </p>
+	 <p>
+	  Click to delete a bar. If you want to delete more than one, hold
+	  down Ctrl while you click, and leafDrums will remain in delete mode.
+	 </p>
+	 <p>
+	  If you decide not to delete a bar after all, press Esc to cancel.
+	 </p>
+
+   <subhead>Select</subhead>
+   <p>
+     Using Select, you can make a copy of part of the song in order to paste
+     it elsewhere.
+   </p>
+   <p>
+     Click Select, then click and drag around an area in the song (you should
+     see the selected area highlighted).
+   </p>
+	 <p>
+	  If you decide not to select anything after all, press Esc to cancel.
+	 </p>
+
+   <subhead>Paste</subhead>
+   <p>
+     Once you have selected an area, click Paste to paste it into the song.
+     (Note that this only works within a single copy of leafDrums. You can't
+     paste data from any other program, or data selected in a separate copy
+     of leafDrums.)
+   </p>
+   <p>
+     After you click Paste, move the mouse over the song. You should see a
+     highlighted area where the pasted items will be placed.
+   </p>
+   <ul>
+     <li>Click the <em>left button</em> to paste the area into the song,
+       shifting along everything in those bars to make room</li>
+     <li>Click the <em>right button</em> to paste on top of what's already in
+       those bars, erasing the existing content</li>
+     <li>Hold Ctrl while you click if you want to paste more than one copy</li>
+   </ul>
+	 <p>
+	  If you decide not to paste anything after all, press Esc to cancel.
+	 </p>
+
+   <subhead>Loop checkbox</subhead>
+	 <p>
+	  The Loop checkbox controls whether or not the song should be treated
+	  as a loop.
+	 </p>
+	 <p>
+ 	  This not only affects playback (whether leafDrums loops endlessly when
+    you click Play, or stops once it reaches the R marker) but also controls
+    the way sounds behave if they would continue after the last bar of the song.
+	 </p>
+	 <ul>
+	  <li>If Loop is selected, then a sound that stretches past the end
+		  of the last bar will continue into the first bar</li>
+	  <li>If Loop is not selected, then any such sounds will be cut off
+		  after the end of the last bar, and not included in the first bar</li>
+	 </ul>
+	 <p>
+	  If you want to try out this difference, try creating a blank song with
+	  one bar and then placing a long sound in the last beat. If you turn Loop
+	  off and play the song, the song will be silent until that beat. If you
+	  have Loop on, you'll hear the latter part of the sound immediately that
+	  the song plays.
+	 </p>
+
+	 <subhead>Level envelope</subhead>
+	 <p>
+	  When you turn on 'Level envelope', you can create volume level effects
+	  (fades) on each track of the song.
+	 </p>
+	 <p>
+	  You will see a red horizontal line along the top of each track. This
+	  line indicates that the track is at 100% volume (relative to its level
+	  slider) all the way.
+	 </p>
+	 <p>
+	  To create a fade (either in or out):
+	 </p>
+	 <ul>
+	  <li> Click on this red line in two points: where the fade should start,
+		   and where the fade should finish</li>
+	  <li> You should see two 'nodes' (small black boxes) on the level envelope
+		   line, where you clicked</li>
+	  <li> Now click and drag the node at the 'fade out' end. Move it to the
+		   bottom of the track</li>
+	  <li> Play the song; you should hear the fade-in or fade-out that you just
+		   created</li>
+	 </ul>
+	 <p>
+	  You can add more nodes by clicking on the red line at other points. If you
+	  want to remove nodes, right-click on them.
+	 </p>
+	 <p>
+	  When you turn off the 'Level envelope' checkbox, that does not remove the
+	  level envelope. It only hides it so that you can edit the pattern more
+	  easily without accidentally creating nodes. The envelope is still there and
+	  you can turn on 'Level envelope' again when you want to change it.
+	 </p>
+	 <p>
+	  If you really want to get rid of the level envelope, delete each node by
+	  right-clicking on it.
+	 </p>
+
+	 <subhead>Repeats (arrows and flags)</subhead>
+	 <p>
+	  Sometimes you may need to create a repetitive section of song - for example,
+	  you may want to repeat the same four bars eight times. So that you don't
+	  have to place the patterns in the song eight times over, you can use <em>arrows</em>
+	  and <em>flags</em>.
+	 </p>
+	 <p>
+	  Flags indicate the beginning of a repeated section, and arrows indicate its end.
+	 </p>
+	 <p>
+	  You can place arrows and flags by moving the mouse over the top of the bar (near the bar
+	  number). There are three different colours of arrow and flag; the outer arrow and flag
+	  are blue, the middle ones are green, and the inner ones are red. When you create a repeat,
+	  you need to use the same colour flag and arrow.
+	 </p>
+	 <p>
+	  For example, to make four bars repeat twice in the song, click on the leftmost flag space
+	  on the first bar to place a blue flag. Then click on the rightmost arrow space on the final
+	  bar of the repeated section to place a blue arrow.
+	 </p>
+	 <p>
+	  When you move your mouse over an arrow, you can change the number of times the section is
+	  repeated using the right mouse button. Click with the right mouse button to increase the
+	  repeat count; hold down Ctrl and click with the right mouse button to decrease it.
+	 </p>
+	 <p>
+	  If you want to <em>nest</em> repeated sections (so that you repeat one section inside
+	  another repeated section), your inner repeated section must use an inner set of markers.
+	  For example, you can have a green repeated section inside a blue repeated section, but
+	  not the other way around.
+	 </p>
+
+	</content>
+   </page>
+
+   <page id="drumsdisplay">
+	<title>Drums display</title>
+
+	<content>
+	 <p>
+	  The drums display shows the drum you have selected for each line of the song.
+	  It corresponds to the lines shown in the <link id="patterndisplay">pattern
+	  display</link>.
+	 </p>
+	 <p>
+	  <image file="drumsdisplay.gif" alt="The drums display"/>
+	 </p>
+   <subhead>Selecting or editing sounds</subhead>
+	 <p>
+	  To set a drum sound, or to modify an existing sound, click on the name of the
+	  sound for that line. This will take you to the <link id="drumscreen">drum
+	  screen</link> where you can select a different .wav file and modify
+	  the sound.
+	 </p>
+   <subhead>Adjusting levels</subhead>
+	 <p>
+	  You can use the level and pan controls to alter the level and left-right
+	  positioning of each drum sound. If you click Mute, the drum sound is silenced
+    entirely.
+	 </p>
+	 <p class="note">
+	  Note that all controls in the drums display refer to those drum sounds
+	  throughout the entire song. They are not specific to a particular pattern.
+	  If you reduce the level of a hi-hat sound in the drums display, its level
+	  will be reduced throughout the entire song, not just in the currently
+	  selected pattern. The same applies if you change a sound entirely, or tweak
+	  its settings.
+	 </p>
+   <subhead>Rearranging drums</subhead>
+   <p>
+     You can rearrange the order of drums (and the corresponding lines in the
+     song) by dragging them up and down on this list. This doesn't make any
+     difference to the sound, but it could be useful if you want to concentrate
+     on particular drums while editing.
+   </p>
+	</content>
+   </page>
+
+   <page id="patterndisplay">
+	<title>Pattern display</title>
+
+	<content>
+	 <p>
+	  The pattern display shows a single pattern of the current song, with
+	  the drum hits that have been placed into it. Patterns are always one bar
+	  long.
+	 </p>
+	 <p>
+	  <image file="patterndisplay.gif" alt="The pattern display"/>
+	 </p>
+
+	 <subhead>Pattern selector</subhead>
+	 <p>
+	  The pattern selector (at the top right) indicates the name of the current
+	  pattern. You can change to a different pattern using the left and right
+	  arrow buttons.
+	 </p>
+	 <p class="note">
+	  It's often quicker to change pattern by right-clicking on the pattern
+	  in the <link id="songdisplay">song display</link>.
+	 </p>
+
+     <subhead>Control buttons</subhead>
+
+	 <subsubhead>Rename</subsubhead>
+	 <p>
+	  Click Rename to give the pattern a more descriptive name. This is strongly
+	  advised, as it's easy to lose track of patterns when they are only
+	  identified with a number.
+	 </p>
+	 <p>
+	  When you click Rename, you can type into the pattern name area. You can
+	  only type very short names, because the name has to fit in the available
+	  space. After you've typed the name, press Enter or click elsewhere to
+	  finalise the change.
+	 </p>
+
+	 <subsubhead>Duplicate</subsubhead>
+	 <p>
+	  Use Duplicate when you want to create a copy of the pattern so that you
+	  can modify it slightly.
+	 </p>
+	 <p class="note">
+	  The duplicated pattern will have the same name as the original pattern you
+	  duplicated, but with a number added at the beginning so that you can
+	  distinguish it. For example, if you duplicate a pattern called 'hi-hat',
+	  you'll have a copy called '2hi-hat'.
+	 </p>
+
+	 <subsubhead>Delete</subsubhead>
+	 <p>
+	  Click Delete to remove a pattern from the song. You'll be asked for
+	  confirmation: be careful, because deleted patterns cannot be restored.
+	 </p>
+
+	 <subsubhead>New</subsubhead>
+	 <p>
+	  Click New to create a new blank pattern. The pattern will be given a number
+	  as its name. New patterns are given the same number of beats as the song's
+	  initial (bar 1) time signature.
+	 </p>
+	 <p class="note">
+	  You can also create blank patterns and place them in the song simultaneously,
+	  by Ctrl-left-clicking in the song display.
+	 </p>
+
+	 <subhead>Main pattern display</subhead>
+	 <p>
+	  The main part of the pattern display shows a grid on which you can place
+	  drum hits.
+	 </p>
+	 <subsubhead>The pattern grid</subsubhead>
+	 <p>
+	  Each horizontal row of the grid corresponds to one drum sound (shown level
+	  with the grid in the <link id="drumsdisplay">drums display</link>).
+	 </p>
+	 <p>
+	  The vertical grid lines show where you can place drum hits. If these are
+	  not accurate enough, you can turn on 'fine grid' (see below).
+	 </p>
+	 <p>
+	  When you use a time signature with more than four beats per bar, you can
+	  use the horizontal scrollbar to reach the beats that are off-screen.
+	 </p>
+	 <subsubhead>Placing hits</subsubhead>
+	 <p>
+	  When you move
+	  the mouse over the grid, you'll see a grey circle appearing over the nearest
+	  grid line; this indicates where a hit will be placed if you click.
+	 </p>
+	 <p>
+	  You place a drum hit by left-clicking on the grid. If there is already a
+	  hit in that location, left-clicking there will remove the hit instead.
+	 </p>
+	 <p>
+	  If you want an accented (louder) hit, right-click instead of left-clicking.
+	 </p>
+	 <subsubhead>Hit display</subsubhead>
+	 <p>
+	  Hits are displayed as circles. Normal hits are thin circles; accented hits
+	  are thicker circles.
+	 </p>
+	 <p class="note">
+	  The display doesn't bear any relation to the actual length of the sound;
+	  it only indicates where the sound starts.
+	 </p>
+	 <subsubhead>Song lines</subsubhead>
+	 <p>
+	  You don't need to manually add more lines to the song; when you use the
+	  last line (by placing a hit there), leafDrums will automatically create
+	  another line for you to use.
+	 </p>
+	 <p>
+	  If you have more lines than the sixteen that fit on screen, you can use
+	  the vertical scrollbar to navigate among them. There is no limit on the
+	  number of lines.
+	 </p>
+	 <subsubhead>Fine grid</subsubhead>
+	 <p>
+	  You can turn on 'fine grid' if you need to place hits more accurately. By
+	  default, leafDrums shows beats and quarter beats in the grid; if you turn
+	  on 'fine grid', it will also show sixteenth beats.
+	 </p>
+	 <p>
+	  Once you have turned on 'fine grid', you can place hits on the sixteenth
+	  beats. You can turn off fine grid again (the hits won't move or vanish),
+	  but if you later want to remove those hits, you will need to turn on
+	  'fine grid' once more so that you can click on them.
+	 </p>
+	 
+	 <subhead>Adding and removing beats</subhead>
+	 <p>
+	  If you change time signature of the song (for example to 3:4) then you need
+	  to make sure that patterns match the time signature of the area in which they
+	  are used. Placing a pattern with 4 beats in a 3:4 song won't work, and the pattern
+	  will be displayed in red as a warning.
+	 </p>
+	 <p>
+	  You can add or remove beats by clicking the 'Remove' or 'Add' buttons at bottom
+	  right. Be careful, because when you remove a beat you lose any drum hits from 
+	  within that beat.
+	 </p>
+
+	 <subhead>Triplets</subhead>
+
+   <terminology>
+ 	  <term>Triplets</term>
+	  <definition>
+	   <em>Triplets</em> are sections of a rhythm where three hits are placed in the space
+	   where two would normally go.
+	  </definition>
+	 </terminology>
+
+     <subsubhead>Creating triplets</subsubhead>
+	 <p>
+	  If you want to create a triplet, click the 'Triplet' button, then move the mouse over
+	  the pattern. The two spaces which will become three are highlighted. When you're in the
+	  right place, click the button to make those two grid spaces into three.
+	 </p>
+	 <p>
+	  This does not add the actual hits that make up a triplet - it just gives you the
+	  appropriately-spaced grid lines so that you can do that yourself.
+	 </p>
+	 <p>
+	  Triplets only affect a single line of the pattern. If you want them to affect more than
+	  one line, repeat the process with each line. There's no limit on the number of triplets
+	  in a pattern.
+	 </p>
+	 <p>
+	  If you begin to place a triplet, but decide you don't want to after all, press the
+	  Esc key to cancel.
+	 </p>
+	 <subsubhead>Removing triplets</subsubhead>
+	 <p>
+	  You can use the same procedure to remove an existing triplet space if you change your
+	  mind. (You'll see that the mouseover highlight shows the three grid spaces that will
+	  become two.)
+	 </p>
+	 <subsubhead>Sizes of triplet</subsubhead>
+	 <p>
+	  It is possible to create triplets in three sizes:
+	 </p>
+	 <ul>
+	  <li>Three beats in place of two</li>
+	  <li>Three quarter beats in place of two</li>
+	  <li>Three sixteenth beats in place of two</li>
+	 </ul>
+	 <p>
+	  The default setting affects quarter beats. If you want to modify
+	  entire beats, hold Shift while you click the beats. If you want to modify
+	  sixteenth beats, hold Ctrl while you click them.
+	 </p>
+	 <p>
+	  You can have 'triplets within triplets' if you like (by creating
+	  a sixteenth-beat triplet inside a quarter-beat triplet, for example).
+	 </p>
+	</content>
+   </page>
+
+  </page>
+
+  <page id="drumscreen">
+   <title>Drum screen</title>
+
+   <content>
+    <p>
+	 <image file="drumscreen.gif" alt="Drum screen"/>
+	</p>
+    <p>
+	 This screen contains three sections:
+	</p>
+	<ul>
+	 <li>The <em>control bar</em> (green background)<br/>
+	     The control bar is present on this screen as well as on the
+		 song screen, so that you can easily play and stop the rhythm
+		 while you modify sounds.<br/>
+		 <link id="controlbar">More info...</link></li>
+	 <li>The <em>sounds display</em> (blue background)<br/>
+	     Lists all the sounds that are available to leafDrums, and
+		 allows you to select a sound for the current song line.<br/>
+		 <link id="soundsdisplay">More info...</link></li>
+	 <li>The <em>audio processing display</em> (red-brown background)<br/>
+	     Allows you to apply various types of audio processing to the
+		 currently-selected sound.<br/>
+		 <link id="audiodisplay">More info...</link></li>
+	</ul>
+   </content>
+
+   <page id="soundsdisplay">
+    <title>Sounds display</title>
+
+	<content>
+     <p>
+	  The sounds display lists all the sounds (.wav and .ogg files) in the folders
+	  which leafDrums uses. You can use it to select a sound for the current
+	  line of the song.
+	 </p>
+	 <p>
+	  <image file="soundsdisplay.gif" alt="Sounds display"/>
+	 </p>
+	 <subhead>Sound list</subhead>
+
+	 <subsubhead>Selecting a sound</subsubhead>
+	 <p>
+	  You can select a sound by clicking on its name. The selected sound has a
+	  grey background.
+	 </p>
+	 <p>
+	  Once you select a sound, this becomes the sound that
+	  leafDrums uses for the current line of the song (the line that you
+	  clicked on in order to get to the drum screen).
+	 </p>
+
+	 <subsubhead>Files and folders</subsubhead>
+	 <p>
+	  The display lists all the files in folders that leafDrums is using,
+	  and in folders within those folders.
+	 </p>
+	 <p>
+	  Files are listed with their full filename except for the .wav or .ogg.
+	  leafDrums only supports .wav and .ogg files, so other file formats aren't
+	  shown.
+	 </p>
+	 <p>
+	  Subfolders are shown with header bars - 'Drums' and 'Cymbals' are
+	  the first two examples in the screenshot. The level of indentation
+	  indicates which folders are within other folders. In the screenshot,
+	  'Drums' is directly within the main leafDrums Sounds folder; 'Cymbals',
+	  'Kicks', 'Miscellaneous', 'Snares', and 'Toned' are all folders
+	  within the 'Drums' folder.
+	 </p>
+	 <p>
+	  You can click on a header bar to hide or show all the files and
+	  folders within that folder. This is useful when you have many
+	  sound files.
+	 </p>
+
+	 <subhead>Controls</subhead>
+
+	 <subsubhead>Open</subsubhead>
+	 <p>
+	  The Open button (with a folder icon beside it) opens a standard
+	  Windows folder window on the main leafDrums folder. You can then drag
+	  new files into the folder, or make other changes to the files.
+	 </p>
+	 <p>
+	  Note that leafDrums only supports .wav and .ogg files, not any other formats.
+	  leafDrums supports any .wav files that your version of Windows can read, and
+	  .ogg files that were compressed using Ogg Vorbis. (This means almost any 
+	  file with the .ogg extension.)
+	 </p>
+	 <p>
+	  leafDrums is not designed to cope with very large audio files.
+	  If a sound is longer than ten bars it will be cut off during
+	  playback. If you want to include a very large .wav file in your
+	  song (e.g. vocals for an entire track), it's better to keep that
+	  file outside leafDrums and mix it with leafDrums's written output
+	  later using some other software.
+	 </p>
+
+	 <subsubhead>Refresh</subsubhead>
+	 <p>
+	  Once you have altered the files in a folder leafDrums is using,
+	  you should click Refresh. This updates the list to include any
+	  new files you might have added.
+	 </p>
+
+	 <subsubhead>Options</subsubhead>
+	 <p>
+	  You can use this button if you want to store drum files in a
+	  different location.
+	 </p>
+	 <p>
+	  The resulting dialog allows you to add a new folder which leafDrums
+	  will use. You can also remove the existing folder if you like (but
+	  it is perfectly possible to have files from multiple folders).
+	 </p>
+
+	 <subsubhead>Song</subsubhead>
+	 <p>
+	  Click the Song button to return to the song screen. As a shortcut,
+	  you can also press the F5 key.
+	 </p>
+
+	</content>
+   </page>
+
+   <page id="audiodisplay">
+    <title>Audio processing display</title>
+
+	<content>
+     <p>
+	  The audio processing display lets you apply changes to the sound
+	  after leafDrums has loaded it. You can cut parts out of the sound,
+	  reverse it, retune it, stretch it to fit the song tempo, and apply various
+	  digital effects.
+	 </p>
+
+	 <p>
+	  <image file="audiodisplay.gif" alt="Audio processing display"/>
+	 </p>
+
+	 <p>
+	  <em>All</em> changes you might make in the audio processing display affect
+	  only the current song; they never alter the original .wav file from
+	  which the sound was loaded.
+	 </p>
+
+	 <subhead>Basic controls</subhead>
+
+	 <subsubhead>Test buttons</subsubhead>
+	 <p>
+	  The two Test buttons allow you to check what the sound is like.
+	  You can test the original sound, and also the sound that results
+	  after all processing has been applied.
+	 </p>
+	 <p class="note">
+	  On some computers, you cannot test a sound while the rhythm is
+	  playing (you will get an error message). If your computer system
+	  is like this, you'll have to stop playing the rhythm before you
+	  test sounds.
+	 </p>
+	 <p class="note">
+	  You may not need to use the Test buttons at all; if you place
+	  drum hits into the song and leave it playing, you can hear any
+	  changes you make right there in the rhythm. (There's a slight
+	  delay of about a quarter of a second before changes take effect.)
+	 </p>
+
+	 <subsubhead>Reverse</subsubhead>
+   <p>
+     If you choose Reverse, the sound will be reversed before any processing
+     is applied. (This reversal even applies to the 'Test original' button,
+     although of course it does not affect the .wav file on disk.)
+   </p>
+
+	 <subsubhead>Accent level control</subsubhead>
+	 <p>
+	  The 'Accent level' slider lets you adjust the level of accented
+	  hits on this drum.
+	 </p>
+	 <p>
+	  If this slider is in the centre, then accented hits
+	  are the same level as normal hits; if it is at the far right,
+	  accented hits are twice as loud. By default, accented hits
+	  are at 150% of the normal level.
+	 </p>
+
+	 <subhead>Envelope + trim</subhead>
+
+	 <subsubhead>Purpose</subsubhead>
+	 <p>
+	  This section allows you to trim the ends of a sound so that the
+	  final sound contains only a portion of the original file. You
+	  can also add a fade-out or fade-in.
+	 </p>
+	 <p>
+	  The facility is more useful with some sounds than others. In
+	  many cases it can be used to alter the attack, length, and
+	  decay of drum sounds.
+	 </p>
+	 <p>
+	  For example, by careful manipulation of the length and decay
+	  controls, you can make an open hi-hat exactly the right
+	  length so that it sounds like it is 'stopped' by a following
+	  closed hi-hat hit.
+	 </p>
+
+	 <subsubhead>Usage</subsubhead>
+	 <p>
+	  To enable this section, click the checkbox. (Note that this
+	  section cannot be used at the same time as 'Stretch to fit';
+	  if that section is currently enabled, it will automatically
+	  be disabled.)
+	 </p>
+	 <p>
+	  The four sliders are as follows:
+	 </p>
+	 <ul>
+	  <li><em>Skip</em><br/>
+	      Use this slider if you want to skip over some of the
+		  beginning of the file and start somewhere in the middle</li>
+	  <li><em>Length</em><br/>
+	      Adjusts the length of the section used; if you reduce the
+		  length, you'll cut off some of the end of the file</li>
+	  <li><em>Attack</em> (fade in)<br/>
+	      Controls a 'fade in' at the beginning of the sound. The
+		  number in milliseconds refers to the length of time it takes
+		  to go from zero to full level</li>
+	  <li><em>Decay</em> (fade out)<br/>
+	      Controls a 'fade out' at the end of the sound. The
+		  number in milliseconds refers to the length of time it takes
+		  to go from full level to zero</li>
+	 </ul>
+	 <p class="note">
+	  It's possible to overlap the fade in and fade out.
+	  (For example, if your sound is 250 milliseconds long, you could
+	  have a 200 ms fade in and a 200 ms fade out.) Overlapping the
+	  fades doesn't do any harm, but it means the sound will never
+	  reach maximum level. You probably don't want to do it.
+	 </p>
+
+	 <subhead>Tuning</subhead>
+
+	 <subsubhead>Purpose</subsubhead>
+
+	 <p>There are three main uses for tuning:</p>
+
+	 <ul>
+	  <li>To correct a sound that is slightly out of tune</li>
+	  <li>To change the musical pitch of a toned sound</li>
+	  <li>To create strange effects</li>
+	 </ul>
+
+	 <subsubhead>Usage</subsubhead>
+
+     <p>
+	  You can enable tuning by clicking on the checkbox. (Note that this
+	  section cannot be used at the same time as 'Stretch to fit';
+	  if that section is currently enabled, it will automatically
+	  be disabled.)
+	 </p>
+
+	 <p>
+	  Once enabled, there are four controls:
+	 </p>
+
+	 <ul>
+	  <li><em>Resample</em> (up/down)<br/>
+	      This determines whether you are making the sound higher in
+		  pitch (up) or lower (down)</li>
+	  <li><em>Octaves</em>, <em>Semi</em><br/>
+	      Use these controls to alter the musical pitch of a note
+		  by a given number of octaves (up to four) and semitones
+		  (up to eleven)</li>
+	  <li><em>Fine</em><br/>
+	      This control is used for fine-tuning. The number is
+		  measured in 1/24th semitones, which should be accurate
+		  enough for most purposes</li>
+	 </ul>
+
+     <p class="note">
+	  As the on-screen text indicates, this facility changes the pitch
+	  of your sound by resampling it (equivalent to slowing down or
+	  speeding up a record). If you make a sound one octave lower,
+	  it also becomes twice as long.
+	 </p>
+
+	 <subhead>Stretch to fit</subhead>
+
+	 <subsubhead>Purpose</subsubhead>
+
+	 <p>
+	  This facility allows you to import pre-recorded drum loops into
+	  leafDrums, and have them automatically stretched to the correct
+	  length (e.g. one bar), even if you change the song's tempo.
+	 </p>
+
+	 <p>
+	  The drum loops must be recorded and edited precisely, so that
+	  the .wav file would sound correct if it were played on continuous
+	  loop.
+	 </p>
+
+	 <p>
+	  You can select smaller parts of these loops after they
+	  have been stretched; chopping up loops in this way might help
+	  you to create original 'breakbeat' sounds from sampled rhythms.
+	 </p>
+
+	 <subsubhead>Usage</subsubhead>
+
+	 <p>
+	  To enable this section, click the checkbox. (Note that this
+	  section cannot be used at the same time as 'Envelope + trim'
+	  or 'tuning'; if those sections are currently enabled, they
+	  will automatically be disabled.)
+	 </p>
+
+	 <p>
+	  There are three sliders:
+	 </p>
+
+	 <ul>
+	  <li><em>Total length</em><br/>
+	      This slider refers to the total length of the drum loop
+		  file, in beats. For example, if a 4:4 drum loop is
+		  two bars long, you would set this to 8 beats. leafDrums
+		  will then stretch the sound so that it is always eight beats
+		  long, whatever the tempo</li>
+	  <li><em>Skip</em><br/>
+	      Use this slider if you want to skip some beats from the
+		  start of the loop, so that your sound begins some way
+		  into the loop. The slider is measured in beats. (For this
+		  to work, you must have set the total length correctly.)</li>
+	  <li><em>Output length</em><br/>
+	      The companion to Skip, this slider controls the length
+		  of the final output sound in terms of beats. You can
+		  reduce this slider if you don't want to include some
+		  beats at the end of the sound</li>
+	 </ul>
+
+     <p class="note">
+	  As with tuning, this facility works by resampling the sound.
+	  Therefore, stretching the length also affects pitches; if
+	  your loop contains toned elements, they'll go out of tune
+	  unless your song's tempo is the same that the loop was
+	  originally created with.
+	 </p>
+
+	 <subhead>Effects</subhead>
+
+	 <subsubhead>Purpose</subsubhead>
+
+     <p>
+	  leafDrums contains some simple digital effects which can
+	  add interest and richness to your sound. They are also fun
+	  if you just want to make weird noises.
+	 </p>
+
+	 <subsubhead>Usage</subsubhead>
+
+	 <p>
+	  To enable each effect, use the left or right arrows to
+	  select the effect type you want.
+	 </p>
+
+	 <p>
+	  Once enabled, an effect likely won't do anything until
+	  you slide the 'effect mix' slider to the right.
+	 </p>
+
+   <p>
+     The 'time snap' option makes any delay sliders in the effect
+     snap to 1/4 beat increments when you drag them, so that you can
+     have delays that match the tempo. (If you change the tempo, you'll
+     need to come back and edit the delay again.)
+   </p>
+
+	 <p>
+	  <link id="fx">(Information about specific effects...)</link>
+	 </p>
+
+	 <subhead>Presets</subhead>
+
+     <terminology>
+ 	  <term>Presets</term>
+	  <definition>
+	   <em>Presets</em>, in leafDrums, are standard disk files which contain
+	   all the settings associated with a sound.
+	  </definition>
+	 </terminology>
+
+	 <p>
+	  You can save a sound as a 'preset' and then open it from within another
+	  leafDrums song, or from within the same song (if you want another copy
+	  of the same sound on a different drum line, for instance).
+	 </p>
+
+     <subsubhead>Save</subsubhead>
+
+	 <p>
+	  Click this button to save the current sound as a preset. You'll be
+	  prompted for a filename.
+	 </p>
+
+	 <subsubhead>Open</subsubhead>
+
+	 <p>
+	  Click this button to open a preset. The preset overrides settings of
+	  the current sound (if they exist).
+	 </p>
+
+	 <p>
+	  From the open dialog, as well as selecting a file, you can control
+	  which aspects of the preset are applied. For example, if you only
+	  want to use the same effects, then you can turn off everything
+	  except 'Effects'. Effects from the preset file will be applied, but
+	  the other settings of your sound will remain the same.
+	 </p>
+
+	 <p>
+	  Note that if you turn off the 'Sound file' checkbox (so that the file
+	  is not changed), you also can't apply 'Envelope and trim' settings.
+	  This is because those settings depend on the length of the file, so
+	  they can't usefully be applied to a different file.
+	 </p>
+
+	 <p class="note">
+	  In the Advanced section of this help file, there is a page on
+	  <link id="../advanced/presets">using presets creatively</link>.
+	 </p>
+
+	</content>
+
+	<page id="fx">
+	 <title>Effects</title>
+
+	 <content>
+	  <p>
+	   leafDrums contains various digital effects. This page explains what
+	   the effects do and how to alter their settings to get the result
+	   you want.
+	  </p>
+
+	  <subsubhead>Effect mix</subsubhead>
+
+	  <p>
+	   Most effects contain an 'effect mix' slider. This control alters
+	   the balance between the effected sound and the original. If the
+	   slider is at the left, you will hear the original sound only;
+	   if it's at the right, you will hear the effect result only.
+	  </p>
+
+	  <subhead>Delay</subhead>
+
+	  <p>
+	   This effect allows you to delay a sound. Normally, you balance
+	   the effect mix so that the original undelayed sound can still be
+	   heard, giving an echo effect. You can delay each channel (left
+	   and right) by different amounts, to result in a stereo delay.
+	  </p>
+
+	  <ul>
+	   <li><em>Delay L</em>: time delay applied to the left channel</li>
+	   <li><em>Delay R</em>: time delay applied to the right channel</li>
+	   <li><em>Feedback</em>: allows you to feed back the delay's output
+		   into the input, resulting in multiple echoes</li>
+	   <li><em>Delay type</em>: a 'crossed' delay takes its input from
+		   the other channel, so that sounds in the left channel will
+		   be echoed in the right channel, and vice versa</li>
+	   <li><em>Phase</em>: allows you to alter the phase of the delayed
+		   output (generally not very useful)</li>
+	   <li><em>Feedback phase</em>: altering the phase of the feedback can
+		   result in a slightly different sound</li>
+	  </ul>
+
+	  <subhead>Chorus</subhead>
+
+	  <p>
+	   The chorus effect varies the pitch of the original sound up and
+	   down slightly as time goes by, creating a version of the sound
+	   that's detuned by some amount. Mixing this with the original can
+	   create a thicker sound.
+	  </p>
+
+	  <ul>
+	   <li><em>Pre-delay L</em>: a time delay on the left channel before
+		   the chorus effect is applied</li>
+	   <li><em>Pre-delay R</em>: a time delay on the right channel before
+		   the chorus affect is applied</li>
+ 	   <li><em>Depth</em>: the amount by which pitch is varied</li>
+ 	   <li><em>Speed</em>: the speed at which pitch changes</li>
+ 	   <li><em>Chorus type</em>: in a stereo chorus effect, the pitch
+		   change is opposite in each channel (i.e. when the left channel
+		   is higher-pitched, the right channel will be lower-pitched)</li>
+ 	   <li><em>Waveform</em>: the manner in which pitch varies, either
+		   a sine wave or triangle wave. Gives a slightly different sound</li>
+	  </ul>
+
+	  <subhead>Flanger</subhead>
+
+	  <p>
+	   Varies the sound in interesting ways over time. If you set feedback
+	   to zero, this is identical to chorus, so put some feedback in.
+	  </p>
+
+	  <ul>
+	   <li><em>Pre-delay</em>: amount to delay sound before the flanger
+		   effect is applied</li>
+	   <li><em>Feedback</em>: how much of its own output the
+		   flanger works on compared to the input sound</li>
+	   <li><em>Depth</em>: size of pitch change</li>
+	   <li><em>Speed</em>: how fast the sound varies (generally sounds
+		   better if this is set quite slow)</li>
+	   <li><em>Flanger type</em>: like the chorus, a stereo flanger is
+		   at the opposite point of its cycle in each channel</li>
+	   <li><em>Waveform</em>: sine or triangle wave for the pitch
+		   variation</li>
+	   <li><em>Feedback type</em>: if you phase-invert the feedback,
+		   the effect is usually more noticeable</li>
+	  </ul>
+
+	  <subhead>Phaser</subhead>
+
+	  <p>
+	   The phaser sounds a bit like the flanger, but
+	   is more distinctive and produces a pitching effect. (It works by
+	   varying the frequency of four filters, but that probably
+	   doesn't help explain anything.)
+	  </p>
+
+	  <ul>
+	   <li><em>Depth</em>: amount of variation</li>
+	   <li><em>Speed</em>: how fast the sound changes</li>
+	   <li><em>Feedback</em>: how much of its own output the
+		   phaser works on compared to the input sound</li>
+	   <li><em>Base freq.</em>: the base frequency affected
+		   (set this higher for a higher-pitched effect)</li>
+	   <li><em>Phaser type</em>: a stereo phaser is at the opposite
+		   point of its cycle in each channel</li>
+	   <li><em>Feedback type</em>: if you phase-invert the feedback,
+		   the effect sounds different</li>
+	  </ul>
+
+	  <subhead>Tremolo</subhead>
+
+	  <p>
+	   This effect makes sound volume vary up and down, giving a
+	   'wobbly' effect. If you set it to stereo, the sound will
+	   seem to move back and forth between the two speakers.
+	  </p>
+
+	  <p>
+	   It's best to set effect mix all the way to the right with
+	   this effect; you can control the amount of effect using
+	   the depth slider instead.
+	  </p>
+
+	  <ul>
+	   <li><em>Depth</em>: how much the volume changes</li>
+	   <li><em>Speed</em>: how fast the sound changes</li>
+	   <li><em>Tremolo</em>: a stereo tremolo makes the sound
+		   sway from side to side, a mono tremolo makes the volume wobble</li>
+ 	   <li><em>Waveform</em>: the manner in which volume varies, either
+		   a sine wave or triangle wave. Makes little difference</li>
+	  </ul>
+
+	  <subhead>Distortion</subhead>
+
+	  <p>
+	   This is a digital distortion effect. It simply amplifies
+	   the sound. If the sound exceeds the maximum level available,
+	   it will 'clip' and become distorted.
+	  </p>
+
+	  <p>
+	   Because this type of distortion makes the sound louder, you
+	   can reduce the volume afterwards with the 'Quieten' slider.
+	   (If for some reason you only want to reduce sound level and
+	   not distort it at all, you can do that too.)
+	  </p>
+
+	  <ul>
+	   <li><em>Distort</em>: the amount by which volume is increased</li>
+	   <li><em>Quieten</em>: the amount by which volume should be reduced
+		   after applying the distortion</li>
+	  </ul>
+
+	  <subhead>EQ</subhead>
+
+	  <p>
+  	   EQ allows you to balance the frequencies of the sound. It works in
+	   the same way as the "tone" dial on a radio. There is also a
+	   "centre frequency" which you can adjust to whatever you think the
+	   "normal frequency" is in your sound.
+	  </p>
+
+	  <p>
+	   You can use either mono or stereo EQ. If you use mono EQ, then the
+	   right-channel settings are ignored and left-channel settings are
+	   used for both channels, so you don't have to manipulate both
+	   sliders.
+	  </p>
+
+	  <ul>
+	   <li><em>L. Centre</em>: centre frequency for left channel</li>
+	   <li><em>L. Tone</em>: balances the tone on either side of the centre</li>
+	   <li><em>R. Centre</em>: centre frequency for right channel</li>
+	   <li><em>R. Tone</em>: balances the tone on either side of the centre</li>
+	   <li><em>Channels</em>: if set to mono, the 'L' controls are used
+		   for both channels</li>
+	  </ul>
+
+	  <subhead>Filter (low/high)</subhead>
+
+	  <p>
+	   You can use this filter to remove some of the frequencies from the sound.
+	  </p>
+
+	  <p>
+	   A "low-pass" filter is one in which bass sounds get through, but high-pitched
+	   sounds like cymbals are reduced in volume. A high-pass filter is the reverse.
+	  </p>
+
+	  <p>
+	   If you want to control the amount by which frequencies are reduced, use
+	   the effect mix slider.
+	  </p>
+
+	  <ul>
+	   <li><em>L Freq.</em>: frequency below/above which to remove sounds on
+		   left channel, or on both channels in a mono filter</li>
+	   <li><em>R Freq.</em>: frequency below/above which to remove sounds on
+		   right channel; ignored in a mono filter</li>
+	   <li><em>Channels</em>: if set to mono, the 'L' controls are used
+		   for both channels</li>
+	   <li><em>Filter type</em>: a low-pass filter reduces sounds above the
+		   selected frequency, and a high-pass filter reduces sounds below
+		   the selected frequency</li>
+	  </ul>
+
+	  <subhead>Filter (band pass)</subhead>
+
+	  <p>
+	   This filter lets through sounds that are higher-frequency than the
+	   minimum frequency, but lower than the maximum frequency (within a
+	   'band').
+	  </p>
+
+	  <p>
+	   Because the filters aren't too great, the cut-off is not very sharp
+	   and there is a "blurred area" around the frequency given; sound is
+	   gradually reduced as it gets past the cut-off frequency, not sharply
+	   cut. So even if you specify minimum and maximum frequencies to be equal,
+	   some sound will still get through.
+	  </p>
+
+	  <ul>
+	   <li><em>Min freq.</em>: frequency below which sounds are reduced</li>
+	   <li><em>Max freq.</em>: frequency above which sounds are reduced</li>
+	  </ul>
+
+	  <subhead>Gate</subhead>
+
+	  <p>
+	   The 'gate' is an effect that allows sound through only if it is above
+	   a certain level.
+	  </p>
+	  <p>
+	   Originally this was used to reduce noise in the pauses between speech
+	   or music, but it can also be used as a special effect.
+	  </p>
+	  <p>
+	   The gate 'opens' (allows sound through) when it receives sound above
+	   the <em>open level</em>. It closes again when the sound level has gone
+	   below the <em>close level</em>. You can control the speed of opening
+	   and closing, so that it fades in or out gradually rather than starting
+	   or stopping abruptly.
+	  </p>
+	  <p>
+	   Normally you would set effect mix to maximum for a gate effect.
+	  </p>
+
+	  <ul>
+	   <li><em>Open level</em>: once sound reaches this level, the gate
+		   opens to allow it through</li>
+	   <li><em>Close level</em>: when the gate is open and sound drops
+		   below this level, the gate will close</li>
+	   <li><em>In speed</em>: how fast the gate opens</li>
+	   <li><em>Out speed</em>: how fast the gate closes</li>
+	  </ul>
+
+	  <subhead>Compressor</subhead>
+
+	  <p>
+	   The compressor is used to reduce sound if it gets above a certain level.
+	  </p>
+	  <p>
+	   The amount by which sound is reduced depends on how far above the given
+	   level it is, until sound reaches the <em>upper level</em>, at which point
+	   it is always reduced by the full amount.
+	  </p>
+	  <ul>
+	   <li><em>Lower level</em>: when sound reaches this level, it will begin to
+		   be reduced</li>
+	   <li><em>Upper level</em>: once sound reaches this level, it will be reduced
+		   by the maximum amount</li>
+	   <li><em>Vol. at max</em>: the volume level which will be applied at maximum
+		   (if this is set to zero, the sound will be entirely cut at maximum)</li>
+	   <li><em>Fade speed</em>: how fast the compressor reacts to changes</li>
+	  </ul>
+
+	  <subhead>Expander</subhead>
+
+	  <p>
+	   The expander is similar to the compressor, but works to increase the level
+	   of quiet sounds instead of reducing the level of loud sounds.
+	  </p>
+	  <ul>
+	   <li><em>Lower level</em>: when sound drops below this level, it will be increased
+		   by the maximum amount</li>
+	   <li><em>Upper level</em>: once sound drops past this level, it will be begin to
+		   be increased</li>
+	   <li><em>Vol. at low</em>: the volume level which will be applied at maximum
+		   (there is quite a wide range on this level control, so you can cause
+		   distortion if you set it too high)</li>
+	   <li><em>Fade speed</em>: how fast the expander reacts to changes</li>
+	  </ul>
+
+  	 </content>
+    </page>
+
+   </page>
+  </page>
+
+  <page id="keyboard">
+   <title>Keyboard shortcuts</title>
+
+   <content>
+    <p>
+     leafDrums has the following keyboard shortcuts:
+  	</p>
+    <ul>
+     <li><em>F5</em> - Jump to song screen</li>
+     <li><em>F6</em> - Jump to drum screen (for sound you were editing most
+       recently)</li>
+     <li><em>F7</em> - If on drum screen, does the same thing as the original
+       sound Test button</li>
+     <li><em>F8</em> - If on drum screen, does the same thing as the final
+       sound Test button</li>
+     <li><em>F9</em> or <em>Space</em> - Play or stop playing the song</li>
+     <li><em>Ctrl+S</em> - Save the song under the same name it had previously</li>
+     <li><em>Esc</em> - Cancel a mode (e.g. if you click Paste then decide you
+       don't want to paste anything)</li>
+    </ul>
+   </content>
+  </page>
+
+ </section>
+
+ <section id="advanced" showdepth="1">
+
+  <title>Advanced topics</title>
+  <summary>
+   These topics are of most interest to people who have already mastered the
+   program and are working at creating real drum tracks.
+  </summary>
+
+  <content>
+   <p>
+    The advanced section is kind of a grab-bag of things I wanted to say that
+	didn't fit anywhere else. These are suggestions and descriptions of things
+	that might be useful if you're getting into the program and using it a
+	bit more intensively.
+   </p>
+  </content>
+
+  <page id="presets">
+   <title>Using sound presets creatively</title>
+   <content>
+    <p>
+	 Sound presets are a pretty cool feature. They have two main uses:
+	</p>
+
+	<ul>
+	 <li>Allowing you to share sounds between different leafDrums songs</li>
+	 <li>Helping you to create similar sounds within a song</li>
+	</ul>
+
+	<p>
+	 In the latter use, you would generally load a preset and then modify
+	 it slightly, or load only certain parts of the preset.
+	 The two basic techniques are:
+	</p>
+
+	<ul>
+
+	 <li>Use the same audio settings for multiple sounds (for consistency)</li>
+
+	 <li>Create several variations of the same sound (for example, applying
+	     different depths of an effect), which you can then use to obtain
+		 analogue-style effects in which the sound gradually changes
+		 through a pattern</li>
+
+	</ul>
+
+   </content>
+  </page>
+
+  <page id="simpleloops">
+   <title>Using leafDrums with another sequencer</title>
+   <content>
+    <p>
+	 The original version of leafDrums was intended to work with other sequencer
+	 program which can play (and loop) .wav files. You can still use this
+	 version to do exactly that.
+	</p>
+	<p>
+	 Generally, you will use leafDrums to create a few patterns (perhaps two
+	 or four bars at a time), then use the
+	 <link id="../reference/controlbar">Write button</link> to save the
+	 loop to a .wav file. You can then import the .wav file into your sequencer.
+	</p>
+	<p>
+	 Often you will want to create several variations of the same basic
+	 rhythm and save them as different .wav files.
+	</p>
+	<p>
+	 You can do this by putting all the variations in the song and setting
+	 the L and R markers to select just one variation. Write this variation
+	 to a .wav, then move the markers and repeat for each variation you
+	 want to save.
+	</p>
+   </content>
+  </page>
+
+  <page id="wholetracks">
+
+   <title>Creating tracks in leafDrums alone</title>
+
+   <content>
+    <p>
+	 If you are creating certain kinds of music, you may be able to create
+	 the entire track (or large portions of a track) in leafDrums, without
+	 having to use other sequencer software.
+	</p>
+	<p>
+	 This is good if you are trying to get by without buying expensive
+	 software, or if you don't require all the complicated features of
+	 such software.
+	</p>
+	<p>
+	 However, leafDrums was primarily designed for drum rhythms, so some
+	 things are less than ideal.
+	</p>
+
+	<subhead>Basic procedure</subhead>
+	<p>
+	 Making your track in leafDrums involves recording lots of samples
+	 (using your favourite sound recording program) and then putting
+	 them together in leafDrums.
+	</p>
+	<p>
+	 For example, you might sample a bass line (either one that you played
+	 on some instrument and recorded live, or sequenced in another program
+	 and recorded from that), melodies, and so on.
+	</p>
+
+	<subhead>Tips</subhead>
+	<ul>
+	 <li>Decide on a tempo for the song before you record anything<br/>
+	     Once you record material to a .wav file, you can't change its tempo
+		 without also affecting the pitch</li>
+	 <li>If recording live, use a simple drum track or click track<br/>
+	     You can use leafDrums to create a click track or simple drum track
+		 (e.g. hi-hats) which you can use when you are recording a live
+		 performance to make sure that you stay in time</li>
+	 <li>Create a new folder for each track<br/>
+	     If you put all the sound files for a track in one folder inside
+		 the leafDrums Sounds folder, it's easy to keep the materials for
+		 the track separate from your normal drums</li>
+	 <li>Use 'stretch' to avoid timing differences<br/>
+	     In case there are minute timing differences between leafDrums (which
+		 times based on your computer's soundcard) and other software that
+		 you might use to program melodies for recording, you can use
+		 'stretch to fit' (in the <link id="../reference/audiodisplay">audio
+		 processing display</link>). This avoids unpleasant tiny gaps, and
+		 provided the difference is very small, should not alter pitch too
+		 much</li>
+	</ul>
+
+	<subhead>Limitations</subhead>
+	<ul>
+	 <li>leafDrums doesn't do MIDI output<br/>
+	     If you prefer to work with MIDI, you'll need to use
+		 another program to program melodies or bass lines, and then record
+		 the results to a .wav file for leafDrums. (I use my leafLoops,
+		 which is a very very simple MIDI sequencer I wrote; it is good
+		 enough for creating short melodic sequences)</li>
+	 <li>Very large .wav files are not handled particularly well<br/>
+	     To begin with, there is an absolute limit of ten bars as the
+		 maximum length of any drum hit. In addition, leafDrums stores
+		 all sounds in memory, using between two and six times the
+		 actual size of the .wav file (see the <link id="performance"
+		 >performance</link> section). So you may need to use another
+		 program to mix in very long sounds (e.g. vocals for entire
+		 track) at the end</li>
+	</ul>
+   </content>
+
+  </page>
+
+  <page id="performance">
+   <title>Software performance issues</title>
+   <content>
+    <p>
+	 leafDrums is a fairly efficient piece of software; key sound mixing code
+	 is written in assembly language, for example. You shouldn't have
+	 to worry about software performance unless you really push the limits,
+	 or you have a very old computer. leafDrums should probably run perfectly
+	 well even on 200 MHz PC with 32 MB RAM, for instance.
+	</p>
+
+	<p>
+	  However, for those few people who need it, I provide this information.
+	</p>
+
+	<subhead>How to tell if performance is a problem</subhead>
+	<p>
+	 Performance is a problem if sound breaks up during playback. If
+	 leafDrums can't keep up with the rhythm, there will be gaps in
+	 the output sound.
+	</p>
+	<p>
+	 If you have Windows 2000 or XP, you can use the Task Manager (press
+	 Ctrl+Alt+Del and click the Task Manager button) to monitor the
+	 amount of CPU time and memory that leafDrums is using.
+	</p>
+	<p>
+	 Other programs which you are running at the same time might also
+	 be using CPU time or memory which leafDrums could benefit from,
+	 so closing down any large programs you are running may improve
+	 the situation.
+	</p>
+	<p>
+	 It is possible that other factors, such as soundcard problems,
+	 might cause sound break-up. If you get sound break-up even when
+	 playing a very simple rhythm (for example, a 4:4 bass beat) then
+	 performance is not the problem and something else is wrong.
+	</p>
+
+	<subhead>CPU performance issues</subhead>
+	<p>
+	 CPU time is required during playback primarily to mix sounds.
+	 If leafDrums is stuttering during playback, but you don't hear
+	 the hard disk thrashing, then CPU time may be the limiting factor.
+	</p>
+	<subsubhead>Major CPU performance factors</subsubhead>
+	<p>
+	 CPU time requirements depend on two things:
+	</p>
+	<ul>
+	 <li>The number of drum sounds playing at once</li>
+	 <li>Whether you've used level envelopes</li>
+	</ul>
+	<p>
+	 CPU requirement increases directly with the number of drum
+	 sounds playing at once (if there are four sounds playing at once,
+	 this will use roughly twice as much CPU as if two were playing
+	 at once).
+	</p>
+	<p>
+	 Level envelopes are not coded as efficiently as they might
+	 be, and the assembly language routine for mixing sounds when
+	 the level changes during the sound is slower.
+	 Removing a level envelope (by deleting all its nodes) will
+	 reduce the CPU requirement slightly.
+	</p>
+
+	<subsubhead>Minor CPU performance factors</subsubhead>
+	<p>
+	 These are likely to make a miniscule difference, and probably
+	 no difference at all unless the numbers are really silly.
+	</p>
+	<ul>
+	 <li>The number of tracks in the song with active patterns</li>
+	 <li>Very long .wav files</li>
+	</ul>
+
+	<subsubhead><em>Non</em>-issues</subsubhead>
+	<p>
+	 Certain factors do not make a difference to CPU time requirements
+	 when you might expect them to.
+	</p>
+	<p>
+	 Primarily, this refers to the <link id="../reference/audiodisplay">audio
+	 processing display</link>. All audio processing, including effects,
+	 is calculated only when you change settings. Audio processing is
+	 not calculated during playback, so it makes no difference to the CPU
+	 time requirement.
+	</p>
+
+	<subhead>Memory issues</subhead>
+	<p>
+	 leafDrums works entirely from memory (it does not play sounds
+	 from the hard disk). This means that memory could be an issue if you
+	 use large sounds or many sounds.
+	</p>
+	<p>
+	 If you hear the hard disk thrashing while leafDrums is playing back,
+	 then lack of memory is the most likely cause for your performance
+	 problems. (Windows has to store the extra data that should be in
+	 memory on disk if it won't fit.)
+	</p>
+
+	<subsubhead>Memory consumption</subsubhead>
+
+	<p>
+	 Audio data for the sounds in your song is the key factor in
+	 memory consumption. Everything else (such as the number of patterns,
+	 the number of tracks, and so on) makes only a tiny difference.
+	</p>
+
+	<subsubhead>Fixed memory consumption</subsubhead>
+
+    <p>
+	 There is a certain base requirement that leafDrums needs just to run.
+	 leafDrums uses about 12 MB. Your operating system probably requires
+	 at least 16 MB for itself, more if it's a modern version.
+	</p>
+
+	<p>
+	 So, if you subtract around 28 MB from the total amount of memory in
+	 your computer, you have an estimate of the amount of memory you can use
+	 for audio data.
+	</p>
+
+	<subsubhead>Audio data size</subsubhead>
+
+    <p>
+	 As a rough guideline, the memory required for a sound is about three
+	 times the size of the .wav file (if it's stereo) or about six times
+	 the size (if it's mono). Compressed .ogg files are uncompressed before
+	 use, so you don't save memory by using compressed files.
+	</p>
+	
+	<p>
+	 This size increases if your song contains tempo changes and the sound
+	 is stretched to fit tempo.
+	</p>
+
+	<p>
+	 If you apply no audio processing at all to the sound, then only
+	 about twice the stereo .wav file or four times the mono .wav file
+	 will be used.
+	</p>
+
+	<p>
+	 If your audio processing ends up making the sound longer than it
+	 originally was (for example, tuning or stretching that reduces
+	 the pitch, or effects which add delay) then more memory will be
+	 needed.
+	</p>
+	
+	<p>
+	 If you use the same sound file twice e.g. with different effects,
+	 it still takes twice as much memory. You don't save memory by
+	 reusing the same sound.
+	</p>
+
+    <p>
+	 What this generally means is that you don't have to worry about
+	 small files like drums, which are often less than 100 KB. You
+	 might need to worry if you use many very large samples. (For
+	 example, a sound that is four bars long at 120 bpm would use
+	 around 8 MB of memory; if you only have 32 MB, even one such
+	 sound might cause problems. Hopefully you don't have many sounds
+	 that are four bars long.)
+	</p>
+
+	<subhead>A workaround</subhead>
+	<p>
+	 If you can't solve your performance problem, a last resort is
+	 to write your song to a .wav file. You can then play the .wav
+	 file, which shouldn't break up.
+	</p>
+
+   </content>
+  </page>
+
+
+ </section>
+
+ <section id="program" showdepth="1">
+  <title>About the program</title>
+
+  <content>
+   <p>
+    The information in this section doesn't directly help you use the
+	program; it covers related topics that aren't really 'help'.
+   </p>
+  </content>
+
+  <page id="ordering">
+   <title>Ordering a registered copy</title>
+
+   <content>
+    <p>
+	 You may order a registered (paid-for) copy of leafDrums 2.3 online
+	 with a credit card, or by post.
+	</p>
+
+	<p>
+	 At time of writing, the program only costs <em>30 US dollars</em>.
+	 The latest price is displayed on the online ordering website.
+	</p>
+
+	<subhead>What you get when you order</subhead>
+	<p>
+	 leafDrums is already fully functional so that you can properly
+	 evaluate it. Therefore, when you register, the program won't do
+	 anything more. You will simply receive a key code (and instructions
+	 on how to use it) that removes the nag screens and puts your name
+	 on the title bar instead of 'unregistered trial version'. Normally
+	 this is sent by email.
+	</p>
+
+	<p>
+	 By making the program fully functional before you register, I'm
+	 demonstrating a certain degree of trust; please don't abuse that
+	 trust. Register the program if you intend to use it after the trial
+	 period.
+	</p>
+
+    <p>
+	 A registration covers this release and all future 2.x releases (if
+	 any). If there is a 3.0 release, there may be a charge.
+	</p>
+
+    <subhead>Ordering online</subhead>
+	<p>
+	 Ordering by credit card is easy and safe. I use an ordering service
+	 (Kagi) who will take your credit card details on their secure site. They
+	 consider security as a major priority.
+	</p>
+	<p>
+	 If you don't want to use a credit card, Kagi can also accept cheques
+	 and money orders in most currencies. On the second page of Kagi's ordering
+	 process, you can choose how to pay.
+	</p>
+	<p>
+	 To order online, <link url="http://www.leafdigital.com/software/leafdrums/order.html">click
+	 here</link> and follow the instructions.
+	</p>
+	<p>
+	 If you pay by credit card, registration keys are sent automatically,
+	 so you should receive your key almost immediately.
+	</p>
+
+	<subhead>Site licenses, exemptions, and other information</subhead>
+
+	<subsubhead>Contact me</subsubhead>
+    <p>
+	 If you want to purchase a site license for leafDrums, or you have
+	 other special requirements, please email me:
+	 <link url="http://www.leafdigital.com/contact/?leafdrums">leafDrums@leafdigital.com</link>
+	</p>
+	<p>	 
+	 In particular, a number of UK schools are using leafDrums in their teaching.
+	 If you work at a state school in the UK and would like to use leafDrums in your
+	 teaching, I have arranged a special standard discount programme which I'm certain 
+	 your school can afford. Please contact me for details. 
+	</p>
+	<p>
+	 Discounts are also available for other educational institutions (universities,
+	 schools in other countries, etc.) on a case-by-case basis.
+	</p>
+
+	<subsubhead>Exemptions</subsubhead>
+
+	<p>
+	 If you really, truly cannot afford to register leafDrums (and I mean
+	 genuinely cannot afford; if you go out and buy music CDs or other
+	 similar luxuries, then you can afford this software) then please
+	 feel free to use it without paying.
+	</p>
+
+    <p>
+	 This doesn't apply if you are a child unless your parents are similarly
+	 poor; you probably bug them to buy you other things, please bug them
+	 to buy you leafDrums as well. It certainly doesn't apply to institutions
+	 or companies.
+	</p>
+
+	<p>
+	 I won't send anyone a free registration code, so don't bother to contact me,
+	 but if you are genuinely short of money, don't feel that you are obligated
+	 to register.
+	</p>
+
+   </content>
+
+  </page>
+
+  <page id="changes">
+   <title>Changes from older versions</title>
+   <content>
+   <subhead>Changes between 2.24 and 2.3</subhead>
+   <p>
+    Significant update. Please note that once you save a file with 2.3, it cannot be
+    loaded in earlier versions.
+   </p>
+   <ul>
+    <li>You can now change tempo and time signature within a song.</li>
+    <li>leafDrums now uses a standard Windows window and can be resized or maximised as desired.</li>
+    <li>Autosave feature stores a copy of your work every 5 minutes. If leafDrums crashes (or you kill it or turn your PC off), then the last autosaved version will be automatically loaded next time you run leafDrums.</li>
+    <li>Now supports all standard .wav file formats (including compressed formats) for loading drum sounds.</li>
+    <li>Also supports Ogg Vorbis format files for drum sounds...</li>
+    <li>...and for the Write feature. (This is useful when you want to put a copy of your song on a webpage for people to download.) </li>
+   </ul>
+   <subhead>Changes between 2.23 and 2.24</subhead>
+   <p>
+     Update with fixes to all other reported bugs. Please note that 
+		 files saved with 2.24 cannot be loaded in earlier versions.
+   </p>
+   <ul>
+	   <li>Bugfix: re-opening the same file now reverts 
+		   to the saved version instead of doing nothing</li>
+		 <li>Bugfix: if you save the file with a different
+		   name, it now remembers this the next time you save
+			 (instead of offering the previous name as default)</li>
+		 <li>Bugfix: if you rearrange the order of drum lines
+		   by dragging, this order is now saved</li>
+		 <li>Bugfix: inserting or deleting bars didn't move the 
+		   repeat arrows correctly; they moved on-screen but did
+			 not immediately update on playback</li>
+		 <li>Bugfix: writing as separate tracks didn't work</li>
+		 <li>UI fix: when writing as separate tracks, track numbers
+		   now start from 1 instead of 0</li>
+		 <li>Bugfix: when writing out tracks, it now doesn't write
+		   a file for tracks that are entirely blank</li>
+		 <li>Bugfix: select and paste was still broken, I think it's
+		   fixed now</li>
+		 <li>Help file updated, version number and copyright date changed</li> 
+   </ul>
+   <subhead>Changes between 2.22 and 2.23</subhead>
+   <p>
+     Another minor bugfix.
+   </p>
+   <ul>
+	   <li>Bugfix: clicking below the last drum name (on the song screen)
+		   caused crash</li>
+   </ul>
+   <subhead>Changes between 2.21 and 2.22</subhead>
+   <p>
+     An embarrassing-mistake update.
+   </p>
+   <ul>
+	   <li>Bugfix: opening song files didn't work</li>
+   </ul>
+   <subhead>Changes between 2.2 and 2.21</subhead>
+   <p>
+     A bugfix update.
+   </p>
+   <ul>
+	   <li>Bugfix: scrolling the drum list caused crash</li>
+		 <li>Bugfix: select/paste caused crash</li>
+		 <li>UI fix: if you click Open and select a .wav or something it
+       tells you that doesn't work and you should do it with the drum screen</li>
+		 <li>UI fix: changed text slightly in Write dialog</li>
+   </ul>
+   <subhead>Changes between 2.11 and 2.2</subhead>
+   <p>
+     This update includes several new features, a few user interface improvements,
+     and some bugfixes.
+   </p>
+   <ul>
+     <li><em>Select and paste</em> in song</li>
+     <li>Ability to <em>write multiple .wav files</em> for use with multitrack
+       software</li>
+     <li><em>Mute</em> facility for individual drum sounds</li>
+     <li>Ability to <em>rearrange drum lines</em> to the order you prefer</li>
+     <li>Drum sounds can be <em>reversed</em></li>
+     <li>Can <em>synch delay times to tempo</em> in effects (Time Snap)</li>
+     <li>UI fix: keyboard shortcuts (F7, F8) to test sounds in audio screen</li>
+     <li>UI fix: changing tempo is now less slow (when you hold down the right button
+       to increase tempo, it accelerates)</li>
+     <li>UI fix: double-clicking a drum name in the song screen no longer causes
+       something to happen in the audio screen</li>
+     <li>UI fix: the Loop button now directly controls playback looping (it was
+       just too confusing before)</li>
+     <li>UI fix: the song now begins with a single pattern placed in it; previously
+       people were confused by having to place the pattern in the song</li>
+     <li>UI fix: now uses the song name as a default name for the Write .wav file</li>
+     <li>Bugfix: markers and flags now shift along when you insert
+       or delete bars</li>
+     <li>Bugfix: no longer crashes if you duplicate a pattern, then delete the
+       original</li>
+     <li>Bugfix: sometimes used to give an error about not being able to play the test
+       sound, even though it just played it; this is now fixed</li>
+     <li>Version number updated to 2.2 everywhere</li>
+     <li>Help file updated for new version and improved slightly</li>
+   </ul>
+
+    <subhead>Changes between 2.1 and 2.11</subhead>
+	<ul>
+	 <li><em>Duplicate</em> button now works again</li>
+    </ul>
+
+    <subhead>Changes between 2.0 and 2.1</subhead>
+	<p>
+	 This minor update fixes several bugs and also includes some new features
+	 that people asked for.
+	</p>
+	<subsubhead>Bug fixes</subsubhead>
+	<ul>
+	 <li><em>Tempo</em> is now set correctly when you load a song</li>
+	 <li><em>Test buttons</em> in the audio screen now work correctly</li>
+	 <li>A crash bug when <em>creating triplets</em> is fixed</li>
+	 <li>Another crash bug when <em>playing back triplets</em> immediately
+	     after you created them is also fixed</li>
+	 <li>If you <em>double-click to open a file</em>, this no longer
+	     causes an on-screen button to be pressed as well</li>
+    </ul>
+
+	<subsubhead>New features</subsubhead>
+	<ul>
+	 <li><em>Flags and arrows</em> allow you to repeat sections of the song</li>
+	 <li><em>Insert</em> and <em>Delete</em> buttons allow you to add or remove bars in
+	     the song without having to re-enter all the patterns</li>
+	 <li>The song grid now <em>scrolls with playback</em></li>
+	 <li>Bars in the song grid are <em>numbered</em> so you can see where you are</li>
+	 <li>You can now use the <em>space bar</em> instead of clicking Play/Stop</li>
+	 <li>Pressing <em>Escape</em> cancels temporary modes (triplet placement,
+	     insert/delete bar)</li>
+	 <li>The Escape key functionality is shown on screen</li>
+	 <li>This help file has been updated to include the new features</li>
+	</ul>
+
+    <subhead>Changes between 1.04 and 2.0</subhead>
+    <p>
+	 Most of the program was rewritten for this version. All the changes were
+	 based on user feedback over the years; if you're one of those who sent
+	 email to me about the software, thank you, and I hope some of the
+	 things you asked for have now been addressed.
+	</p>
+
+	<p>
+	 (I'm pretty hyped about this update - I honestly believe it's now a
+	 really top-class program. If you've been using the old version, I hope
+	 you're as excited by the improvements.)
+	</p>
+
+    <p>
+	 In any case, here are the key changes:
+	</p>
+	<ul>
+	 <li><em>Different file format</em> - leafDrums 2 cannot read the old
+	     file format because the internal structures were all changed to make
+		 the system more flexible. The new format has been designed to support
+		 future enhancements, so hopefully this won't happen again. If you
+		 still need to use leafDrums rhythms, you can have the old leafDrums
+		 installed on your computer at the same time without problems</li>
+	 <li><em>DirectSound playback</em> - Using DirectX improves playback
+	     performance and makes leafDrums co-operate better with other
+		 programs. leafDrums should work with any version of DirectX, but
+		 if you have problems, install DirectX 8</li>
+	 <li><em>Song support</em> - many people were using leafDrums to create
+	     drum rhythms throughout entire songs, a task for which it wasn't
+		 suitable. This version includes song support so that you can have
+		 many copies of a pattern without losing the ability to make changes
+		 to it</li>
+	 <li><em>More flexible timing</em> - leafDrums 2 supports triplets and
+	     different time signatures, two frequently requested features</li>
+	 <li><em>Better composition</em> - you can play two patterns at the
+	     same time, which means you can separate out component elements of
+		 the rhythm into separate patterns and avoid having to repeat them</li>
+	 <li><em>Level fades</em> - the lack of support for fading sounds in and
+	     out in the old version really bugged me; now you can do it via the
+		 'Level envelope' feature</li>
+	 <li><em>Better file selection</em> - the list of .wav files to select
+	     from is now much larger and hierarchical so that you can realistically
+		 use a large selection of drums</li>
+	 <li><em>No distinction between drums and loops</em> - loops are used
+	     with the 'stretch to fit' option instead, which simplifies the
+		 interface</li>
+	 <li><em>Redesigned user interface</em> - while the intentions behind the
+	     old interface (to have everything available on-screen rather than
+		 hidden in menus, to support quick, convenient use) were good, the
+		 interface was not always clear and the visual design made it difficult
+		 to see. The new interface has been designed for maximum clarity and
+		 to provide much more visual help in using the software</li>
+	 <li><em>Same design principles</em> - like the first version, leafDrums 2
+	     is intended to be easy to use, quick to use, and powerful, allowing
+		 you to get started immediately and create interesting sounds</li>
+    </ul>
+   </content>
+  </page>
+
+  <page id="credits">
+   <title>Credits</title>
+
+   <content>
+    <p>
+	 All code, graphics, and documentation by <em>Samuel Marshall</em>/leafdigital.
+	 Copyright &#x00a9; 2005 Samuel Marshall. All rights reserved.
+	</p>
+
+	<p>
+	 sam would like to thank:
+	</p>
+
+	<ul>
+	 <li><em>Targaff</em> - testing<br/>
+	     Targaff kindly tested this version for me (despite that I hadn't
+		 written the help file by then) and found at least one critical
+		 bug which I wouldn't otherwise have noticed. He also pointed out a few
+		 areas which needed improvement before release.</li>
+     <li><em>David Gosnell</em> - drum sounds<br/>
+	     David sampled the drum sounds which are installed with leafDrums
+		 in this and the previous version.</li>
+     <li><em>Wizzu</em> - mailing list<br/>
+	     Wizzu generously agreed to host the <link id="community">mailing
+		 list</link> for me.</li>
+	 <li><em>Chris Hurley</em> - forum<br/>
+	     Chris volunteered to host the <link id="community">Web forum</link>.</li>
+	 <li><em>All those who made suggestions</em><br/>
+	     I do appreciate all suggestions for the program and try to reply
+		 to all your emails, although of course I can't implement
+		 everything.</li>
+    </ul>
+
+   </content>
+
+  </page>
+
+  <page id="contact">
+   <title>Contacting the author</title>
+
+   <content>
+    <p>
+	 You can contact me by email via my website, which also contains a current
+	 FAQ list:
+	</p>
+
+	<p>
+	 <link url="http://www.leafdigital.com/contact/?leafdrums">Contact page</link>
+	</p>
+
+	<p>
+	 If you want to ask questions about the program, make suggestions, report
+	 a bug etc., you can do that to the above address, but in many cases it
+	 might be better to post to the <link id="community">mailing list or Web forum</link>
+	 instead.
+	</p>
+
+  <p>
+    Please do make sure you have read the relevant sections in the help file
+    and have <em>gone through the tutorial</em> before you contact me to ask
+    a question. I get a lot of questions that are covered in the tutorial.
+  </p>
+
+   </content>
+
+  </page>
+
+  <page id="community">
+   <title>leafDrums community</title>
+
+   <content>
+    <p>
+     A mailing list and a Web forum for discussing leafDrums are both available.
+     Please feel free to use these if you have problems with the software or have 
+     anything else you would like to share with other users.
+    </p>
+    <p>
+	 See the <link url="http://www.leafdigital.com/software/leafdrums/community.html">Community 
+	 page of the leafDrums website</link> for current details about both facilities.
+	</p>
+
+   </content>
+
+  </page>
+ </section>
+
+</help>
+
