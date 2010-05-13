@@ -1,8 +1,3 @@
-Temporary note: GRRR there are dependency projects I didn't notice. (../Library
-in the makefile etc.) Will try to get these files online soon. Pester me if
-required.
-
-
 This is the leafDrums 2 drum machine source code. I have no plans to do
 any further work on the project, and am now releasing leafDrums 2 under the
 GNU Public License in case others would like to make changes.
@@ -55,4 +50,9 @@ documentation or assistance to offer - it's five years since I did anything
 to this code (that being only some minor change, I forget) and I don't really 
 use C++ or Windows any more.
 
-All code, graphics etc. are copyright Samuel Marshall.
+All code, graphics etc. are copyright Samuel Marshall. 
+
+Exceptions:
+
+* For convenience, this source tree includes an old version of the zlib
+compression library. (License: http://www.gzip.org/zlib/zlib_license.html )
