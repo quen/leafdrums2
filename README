@@ -90,6 +90,9 @@ If there are any missing files that aren't part of generally available libraries
 or applications, get in touch with me by email (sam at leafdigital dot com)
 with details of what you need.
 
+Image data (BMP_C files etc) is compressed using zlib. Look in 
+Library/CompressedResourceData.cpp to see how the decompression works; with
+this you should be able to figure out how to make a compressor.
 
 Copyright
 ---------
