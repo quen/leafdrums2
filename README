@@ -50,6 +50,46 @@ documentation or assistance to offer - it's five years since I did anything
 to this code (that being only some minor change, I forget) and I don't really 
 use C++ or Windows any more.
 
+
+Help with building
+------------------
+
+You have absolutely no chance of building this project unless you know how to
+code C++ and are familiar with Visual Studio etc. This is not an 'ant' build
+nor even a 'make configure; make' build. This is a 'build lots of crap manually
+using the GUI' build. It would certainly take me ages to get the thing to 
+build...
+
+1) Build the leafChatUnicode project. This creates a DLL (originally for the
+   old version of leafChat) which is required for Unicode support; actually,
+   I don't think this is used by leafDrums, but it includes the header file
+   in the library.
+
+2) Build the Library project. This creates a .lib file which provides all the
+   user interface API.
+
+3) Go find the Ogg Vorbis library, build it, and set it up on your system, 
+   adding it to the include paths so that it works (see WavFile.cpp for how 
+   this is used). If the library has changed since 2005, it might not compile 
+   any more; should this be the case, either edit the leafDrums code (best 
+   option) or find an old version of the lbirary source.
+
+4) You might now be able to build the leafDrums2 project itself. Woohoo! If
+   you do, hopefully you can run it and stuff.
+   
+5) The CreateSetup.pl script (which I just deleted from this repository)
+   used to be used with my custom setup application to create an installer 
+   binary. Instead of this, I would recommend building a new installer using a
+   standard installer system.
+
+If there are any missing files that aren't part of generally available libraries
+or applications, get in touch with me by email (sam at leafdigital dot com)
+with details of what you need.
+
+
+Copyright
+---------
+
 All code, graphics etc. are copyright Samuel Marshall. 
 
 Exceptions:
