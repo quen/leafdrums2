@@ -7,7 +7,7 @@
 $SourceFile="../setup/release/Setup.exe";
 $DOSSource=$SourceFile;
 $DOSSource=~s/\//\\/g;
-$TargetFile="\\temp\\leafDrums23.exe";
+$TargetFile="\\temp\\leafDrums233.exe";
 
 # Create temporary directory
 mkdir("/temp/CreateSetup","rwx");

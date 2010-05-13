@@ -119,7 +119,7 @@ public:
 		// The following levels are stored in 16:16 fixed point format
 		const int iLevelLStart,const int iLevelLIncrement, 
 		const int iLevelRStart,const int iLevelRIncrement,
-		const int iTempo,const int iMaxSubBeats=-1);
+		const int iTempo,const int iMaxOffset); // Max offset is used just to trim bars w/ wrong timesig
 
 	// Save/load
 	void Serialize(CArchive& archive);

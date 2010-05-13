@@ -216,6 +216,15 @@ void CSong::Serialize(CArchive& a)
 		a >> m_iStartBar;
 		a >> m_iStopBar;
 
+		m_vtcTime.Clear();
+		if(iVersion<4)
+		{
+			CTimeChange* ptc=new CTimeChange(this);
+			m_vtcTime.Add(ptc); // Must do this before setting the tempo/timesig
+			ptc->SetTimeSignature(iOldTimeSignature);
+			ptc->SetTempo(iOldTempo);
+		}
+
 		CFileSystem::sm_pCurrent->LoadSounds(a);
 
 		int iCount;
@@ -268,7 +277,6 @@ void CSong::Serialize(CArchive& a)
 			}
 		}
 
-		m_vtcTime.Clear();
 		if(iVersion>=4)
 		{
 			a >> iCount;
@@ -278,13 +286,6 @@ void CSong::Serialize(CArchive& a)
 				ptc->Serialize(a);
 				m_vtcTime.Add(ptc);
 			}
-		}
-		else
-		{
-			CTimeChange* ptc=new CTimeChange(this);
-			m_vtcTime.Add(ptc); // Must do this before setting the tempo/timesig
-			ptc->SetTimeSignature(iOldTimeSignature);
-			ptc->SetTempo(iOldTempo);
 		}
 
 		m_vslLinear.Clear();
@@ -1202,6 +1203,7 @@ int CSong::GetStartTempo() const
 }
 int CSong::GetStartTimeSignature() const
 {
+	if(m_vtcTime.Size()==0) return 4; // Can happen while loading
 	return m_vtcTime[0].GetTimeSignature();
 }
 

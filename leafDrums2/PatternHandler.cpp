@@ -910,7 +910,7 @@ void CPatternHandler::UpdateScrollbars()
 	CGraphicHScroll* pghs=(CGraphicHScroll*)GetItem(IDC_PATTERN_HSCROLL);
 	int iWidth=300+GetWidthOffset();
 	pghs->SetWidth(iWidth,200);
-	int iTimeSignature=GetPattern().GetTimeSignature();
+	int iTimeSignature=GetPattern().GetTimeSignature(); // This line crashes on someone's PC on startup?!
 	pghs->SetRange(0,iTimeSignature*96+7-iWidth,iWidth);
 
 	// Vertical
@@ -964,11 +964,11 @@ void CPatternHandler::OnSelchange(int iID,int iValue)
 
 void CPatternHandler::NewSong()
 { 
+	m_iPattern=-1;
+	SetPatternIndex(0); 
 	UpdateScrollbars();
 	GetVScroll(IDC_PATTERN_VSCROLL)->SetPos(0);
 	UpdateDrumsSection();
-	m_iPattern=-1;
-	SetPatternIndex(0); 
 }
 
 void CPatternHandler::InformResize(int iPreviousWOffset,int iPreviousHOffset)

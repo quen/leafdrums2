@@ -196,7 +196,7 @@ LRESULT CMainFrame::OnSetText(WPARAM wp, LPARAM lp)
 	}
 
 	// Add version number
-	strCaption+=" 2.3 beta";
+	strCaption+=" 2.33";
 
 	// Alter title to add registration status
 	if(CRegistration::sm_pCurrent->Registered())

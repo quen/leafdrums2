@@ -229,7 +229,7 @@ int CLeafDrumsView::OnCreate(LPCREATESTRUCT lpCreateStruct)
 
 	m_gCopyright.LoadResource("Copyright");
 
-	m_uTimer=SetTimer(TIMER_AUTOSAVE,5*60*1000,NULL);
+	m_uTimer=SetTimer(TIMER_AUTOSAVE,2*60*1000,NULL);
 
 	return 0;
 }

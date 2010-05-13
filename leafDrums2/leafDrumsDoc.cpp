@@ -68,6 +68,15 @@ BOOL CLeafDrumsDoc::OnNewDocument()
 		CFileStatus fs;
 		if(CFile::GetStatus(m_sAutosaveFile,fs))
 		{
+			if(::MessageBox(
+				NULL,
+				"Last time you ran leafDrums it failed to exit correctly, and there "
+				"were unsaved changes in your file.\n\n"
+				"Would you like to open the autosaved copy of that file? "
+				"(If you choose No, the autosaved data will be deleted.)",
+				"Autosaved file available",
+				MB_ICONINFORMATION | MB_YESNO)==IDYES)
+			{
 			CFile fAutosave;
 			if(fAutosave.Open(m_sAutosaveFile,CFile::modeRead|CFile::shareDenyWrite))
 			{
@@ -77,6 +86,11 @@ BOOL CLeafDrumsDoc::OnNewDocument()
 				fAutosave.Close();
 
 				SetModifiedFlag();
+			}
+		}
+			else
+			{
+				ClearAutosave();
 			}
 		}
 

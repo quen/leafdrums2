@@ -205,13 +205,14 @@ void CBeat::Play(CMixBuffer& mbTarget,const int iTargetOffset,
 	// The following levels are stored in 16:16 fixed point format
 	const int iLevelLStart,const int iLevelLIncrement, 
 	const int iLevelRStart,const int iLevelRIncrement,
-	const int iTempo,const int iMaxSubBeats/*=-1*/)
+	const int iTempo,const int iMaxOffset)
 {
 	INTERNAL_SYNCHRONIZE;
 
 	if(IsLeaf())
 	{
-		if(m_bHit && iOffset+iLength > GetTimeOffset())
+		int iTimeOffset=GetTimeOffset();
+		if(m_bHit && iOffset+iLength > iTimeOffset && iTimeOffset<iMaxOffset)
 		{
 			s.Play(mbTarget,iTargetOffset,
 				iOffset-GetTimeOffset(),iLength/*-GetTimeOffset()*/,
@@ -221,13 +222,13 @@ void CBeat::Play(CMixBuffer& mbTarget,const int iTargetOffset,
 	}
 	else
 	{
-		for(int i=0;i<m_vbSubBeats.Size() && (iMaxSubBeats==-1 || i<iMaxSubBeats);i++)
+		for(int i=0;i<m_vbSubBeats.Size();i++)
 		{
 			m_vbSubBeats[i].Play(mbTarget,iTargetOffset,
 				iOffset,iLength,
 				s,
 				iLevelLStart,iLevelLIncrement, 
-				iLevelRStart,iLevelRIncrement,iTempo);
+				iLevelRStart,iLevelRIncrement,iTempo,iMaxOffset);
 		}
 	}
 }

@@ -68,7 +68,7 @@ void CLine::Play(CMixBuffer& mbTarget,const int iTargetOffset,
 		sSound,
 		iLevelLStart,iLevelLIncrement, 
 		iLevelRStart,iLevelRIncrement,
-		iTempo,iTimeSignature);
+		iTempo,(iTimeSignature*60*44100)/iTempo  );
 }
 
 // Save/load
