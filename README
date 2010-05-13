@@ -65,19 +65,23 @@ build...
    I don't think this is used by leafDrums, but it includes the header file
    in the library.
 
-2) Build the Library project. This creates a .lib file which provides all the
+2) Go find the zlib library, build it, and set it up on your system,
+   adding it to the include paths so that it works (see
+   Library/CompressedResourceData.cpp for where it's used).
+
+3) Build the Library project. This creates a .lib file which provides all the
    user interface API.
 
-3) Go find the Ogg Vorbis library, build it, and set it up on your system, 
+4) Go find the Ogg Vorbis library, build it, and set it up on your system, 
    adding it to the include paths so that it works (see WavFile.cpp for how 
    this is used). If the library has changed since 2005, it might not compile 
    any more; should this be the case, either edit the leafDrums code (best 
    option) or find an old version of the library source.
 
-4) You might now be able to build the leafDrums2 project itself. Woohoo! If
+5) You might now be able to build the leafDrums2 project itself. Woohoo! If
    you do, hopefully you can run it and stuff.
    
-5) The CreateSetup.pl script (which I just deleted from this repository)
+6) The CreateSetup.pl script (which I just deleted from this repository)
    used to be used with my custom setup application to create an installer 
    binary. Instead of this, I would recommend building a new installer using a
    standard installer system.
@@ -95,6 +99,3 @@ All code, graphics etc. are copyright Samuel Marshall.
 Exceptions:
 
 * Drum sounds were sampled by David Gosnell from an old drum machine.
-
-* For convenience, this source tree includes an old version of the zlib
-compression library. (License: http://www.gzip.org/zlib/zlib_license.html )
